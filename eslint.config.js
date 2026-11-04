@@ -7,6 +7,7 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 export default tseslint.config(
   {
     ignores: [
+      'scripts/qr.mjs',
       'dist/**',
       'coverage/**',
       'playwright-report/**',

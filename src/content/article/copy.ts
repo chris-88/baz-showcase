@@ -114,7 +114,7 @@ export const article = {
     {
       n: 2,
       text: 'Measured on the live prototype after prompt caching; the figures and their basis are in the explainer’s economics chapter.',
-      url: 'https://baz.chrisquinn.ie/#/how-it-works/economics',
+      url: 'https://showcase.chrisquinn.ie/#/how-it-works/economics',
     },
     {
       n: 3,

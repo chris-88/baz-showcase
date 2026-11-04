@@ -48,8 +48,8 @@ export const showcaseConfig = {
   /** Relative, because the article is a route of this site. */
   articleHref: '#/article',
   /** What the article's QR code encodes; `qr.test.ts` checks the two agree. */
-  articleUrl: 'https://baz.chrisquinn.ie/#/article',
-  articleShort: 'baz.chrisquinn.ie/#/article',
+  articleUrl: 'https://showcase.chrisquinn.ie/#/article',
+  articleShort: 'showcase.chrisquinn.ie/#/article',
   /** Questions and collaboration, on the visitor's own phone. */
   askHref: '#/ask',
   askUrl: 'https://baz.chrisquinn.ie/#/ask',

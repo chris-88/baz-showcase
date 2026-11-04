@@ -16,6 +16,6 @@ describe('QR codes and showcase links', () => {
 
   it('has regenerated the article QR image (script prints the URL it encodes)', () => {
     expect(articleSvg).toContain('width="1024" height="1024"')
-    expect(articleSvg).not.toBe(readFileSync('src/assets/qr/open-baz.svg', 'utf8'))
+    expect(articleSvg).not.toBe(bazSvg)
   })
 })

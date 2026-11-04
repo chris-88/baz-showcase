@@ -1,0 +1,49 @@
+{
+  "toneBuckets": [
+    "formal",
+    "neutral",
+    "playful"
+  ],
+  "byCategory": {
+    "banking": {
+      "formal": "I can help with that.",
+      "neutral": "I can help with that.",
+      "playful": "I can help with that."
+    },
+    "ambiguous": {
+      "formal": "Could you tell me a little more about what you need?",
+      "neutral": "Can you tell me a bit more about what you need?",
+      "playful": "Say a bit more and I will see what I can do."
+    },
+    "general_knowledge": {
+      "formal": "That falls outside what I can assist with. I can help with your Demo Bank accounts, products and applications.",
+      "neutral": "That one is outside my remit. I can help with your Demo Bank accounts, products and applications though.",
+      "playful": "Wildly outside my job description. Banking, on the other hand, I can do."
+    },
+    "competitor": {
+      "formal": "I am not able to comment on other providers. I can explain Demo Bank products and how they relate to your circumstances.",
+      "neutral": "I cannot really comment on other banks. I can walk you through our own options and how they fit what you are trying to do.",
+      "playful": "I am not going to review the competition. I can tell you about ours, though, and what would actually suit you."
+    },
+    "off_topic": {
+      "formal": "That is outside the scope of what I can assist with. I can help with your banking.",
+      "neutral": "Not something I can help with. Banking I can do.",
+      "playful": "Tempting, but no. Banking is where I earn my keep."
+    },
+    "abusive": {
+      "formal": "I am happy to continue if there is something about your banking I can help with.",
+      "neutral": "I will leave that there. If there is something about your banking I can help with, I am listening.",
+      "playful": "Noted. If there is an actual banking question in there, I am all ears."
+    },
+    "prompt_injection": {
+      "formal": "I am Demo Bank’s banking assistant and that is the role I will be staying in. I can help with your accounts, products and applications.",
+      "neutral": "I am going to stay as I am. I can help with your accounts, products and applications.",
+      "playful": "Good try. Still a banking assistant. What can I help you with?"
+    },
+    "unsupported": {
+      "formal": "That is not something this service can do. I can help with your products, applications and what they require.",
+      "neutral": "I cannot do that one here. I can help with your products, applications and what they need.",
+      "playful": "Outside what I can actually do. Products and applications, though, I am all over."
+    }
+  }
+}

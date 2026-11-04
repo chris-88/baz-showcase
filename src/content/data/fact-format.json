@@ -1,0 +1,20 @@
+{
+  "[\"identity.fullName\",\"Aoife Ní Bhriain\"]": "Aoife Ní Bhriain",
+  "[\"identity.dateOfBirth\",\"1992-04-17\"]": "1992-04-17",
+  "[\"identity.address\",\"14 Seapoint Terrace, Dublin 8, D08 XY12\"]": "14 Seapoint Terrace, Dublin 8, D08 XY12",
+  "[\"identity.maritalStatus\",\"married\"]": "married",
+  "[\"identity.ppsn\",\"9000417T\"]": "••••••7T",
+  "[\"household.buyingWith\",\"partner\"]": "partner",
+  "[\"household.dependantCount\",1]": "1",
+  "[\"employment.status\",\"employed_full_time\"]": "employed_full_time",
+  "[\"employment.employerName\",\"Ardán Software Limited\"]": "Ardán Software Limited",
+  "[\"housing.currentTenure\",\"renting\"]": "renting",
+  "[\"assets.savingsBalance\",32000]": "€32,000",
+  "[\"liabilities.monthlyLoanRepayments\",0]": "€0",
+  "[\"liabilities.creditCardBalance\",0]": "€0",
+  "[\"housing.firstTimeBuyer\",true]": "Yes",
+  "[\"identity.yearsAtAddress\",3]": "3",
+  "[\"identity.email\",\"aoife.demo@example.invalid\"]": "aoife.demo@example.invalid",
+  "[\"identity.mobile\",\"+353871000417\"]": "+353871000417",
+  "[\"income.annualBasic\",92000]": "€92,000"
+}

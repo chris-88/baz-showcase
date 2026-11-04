@@ -1,0 +1,72 @@
+{
+  "consentDays": 90,
+  "synth": [
+    {
+      "accounts": [
+        {
+          "ref": "current",
+          "bank": "aib",
+          "displayName": "Current Account",
+          "accountType": "current",
+          "iban": "IE87BAZZ00000090742456",
+          "openingBalance": 933.37,
+          "balance": 4132.77
+        },
+        {
+          "ref": "savings",
+          "bank": "aib",
+          "displayName": "Savings Account",
+          "accountType": "savings",
+          "iban": "IE90BAZZ00000089147334",
+          "openingBalance": 32000,
+          "balance": 32000
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "month": {
+        "moneyIn": 5061.02,
+        "moneyOut": 3938.55
+      },
+      "salary": {
+        "amount": 5061.02,
+        "employer": "Ardán Software Limited",
+        "lastOn": "2026-10-23"
+      },
+      "regular": [
+        {
+          "label": "Rent",
+          "amount": 1800,
+          "cadence": "monthly"
+        },
+        {
+          "label": "Transfer to savings",
+          "amount": 1200,
+          "cadence": "monthly"
+        },
+        {
+          "label": "SSE Airtricity",
+          "amount": 150.57,
+          "cadence": "monthly"
+        },
+        {
+          "label": "Virgin Media",
+          "amount": 53.2,
+          "cadence": "monthly"
+        },
+        {
+          "label": "Insomnia Coffee",
+          "amount": 18.71,
+          "cadence": "monthly"
+        }
+      ],
+      "savingsHeld": 32000
+    }
+  ],
+  "maskIban": {
+    "IE87BAZZ00000090742456": "IE **** 2456",
+    "IE90BAZZ00000089147334": "IE **** 7334"
+  }
+}

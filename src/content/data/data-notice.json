@@ -1,0 +1,12 @@
+{
+  "#/privacy": {
+    "type": "data_notice",
+    "title": "I'm keeping notes as we talk",
+    "points": [
+      "What you tell me is stored, so I do not have to ask you twice. That is the part being demonstrated.",
+      "This is a prototype, not a banking service, and nothing here reaches a bank.",
+      "Please leave out anything you would mind being kept, a real PPS number, real account details."
+    ],
+    "noticeHref": "#/privacy"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "not_started": "Not started",
+  "in_progress": "In progress",
+  "waiting_customer": "Waiting for you",
+  "waiting_partner": "Waiting for your partner",
+  "ready": "Ready to submit",
+  "submitted": "Submitted",
+  "under_review": "Being assessed",
+  "info_required": "More information needed",
+  "approved": "Approved",
+  "declined": "Not approved",
+  "paused": "Paused",
+  "completed": "Complete"
+}

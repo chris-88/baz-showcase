@@ -1,0 +1,9 @@
+{
+  "bank_held": "the bank already had it",
+  "customer_stated": "you told me earlier",
+  "partner_stated": "your partner told me",
+  "document_extracted": "from a document you sent",
+  "document_verified": "from a document you sent, checked",
+  "system_derived": "from your account",
+  "account_data": "seen in your linked account"
+}

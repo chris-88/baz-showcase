@@ -1,0 +1,30 @@
+[
+  {
+    "input": [
+      {
+        "id": "6a1f0c2e-5b7d-4e3a-8c9f-0d1e2f3a4b5c",
+        "product": "mortgage",
+        "state": "in_progress",
+        "resumeTo": null
+      },
+      {
+        "id": "9d4c3f5b-8e0a-4b6d-9f2c-3a4b5c6d7e8f",
+        "product": "personal_loan",
+        "state": "in_progress",
+        "resumeTo": null
+      }
+    ],
+    "output": [
+      {
+        "id": "loan_vs_mortgage",
+        "title": "This loan could affect your mortgage",
+        "explanation": "Taking on additional borrowing while a mortgage application is being assessed can affect how much the mortgage team is able to lend, because the repayments count against your affordability. It may be worth holding the loan until the mortgage is decided. Either way, the choice is yours.",
+        "actions": [
+          "pause",
+          "continue"
+        ],
+        "appliesTo": "9d4c3f5b-8e0a-4b6d-9f2c-3a4b5c6d7e8f"
+      }
+    ]
+  }
+]

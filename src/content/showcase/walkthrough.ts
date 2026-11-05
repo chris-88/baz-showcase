@@ -22,7 +22,7 @@ import type { TranscriptEvent } from './types'
 /**
  * What happens on the phone during the walkthrough.
  *
- * The savings story: the deposit is at another bank, Baz reads it through open banking,
+ * The savings story: the deposit is at another bank, Saoirse reads it through open banking,
  * puts it to work across three accounts from the savings engine's arithmetic, moves it
  * across, and comes back months later when the balance reaches the target to start the
  * mortgage the customer came in for. The cards are the product's, typed against the
@@ -471,7 +471,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     settleAtMs: 115_600,
     settled: {
       label: '€32,000 on its way to Your Demo Bank current account',
-      note: 'Instructed through Nexus under PSD2. Baz will say when it lands.',
+      note: 'Instructed through Nexus under PSD2. Saoirse will say when it lands.',
     },
   },
   {

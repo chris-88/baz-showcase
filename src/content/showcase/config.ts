@@ -11,14 +11,14 @@ import type { ChapterId, ChapterManifest } from './types'
  *
  * The tracks are imported as modules rather than read from `public/`, so Vite hashes them
  * and prefixes the base path, and the service worker's precache glob (js, css, html, svg,
- * png, woff2) never picks them up: a visitor who opens Baz on conference wifi does not
+ * png, woff2) never picks them up: a visitor who opens Saoirse on conference wifi does not
  * download three minutes of narration they will never hear.
  *
  * `liveDemoUrl` is the string the printed QR code encodes. `qr.test.ts` checks the two agree,
  * so the explore screen cannot point somewhere the code on the slide does not.
  */
 export const showcaseConfig = {
-  title: 'The Baz showcase',
+  title: 'The Saoirse showcase',
   chapters: {
     opportunity: {
       id: 'opportunity',

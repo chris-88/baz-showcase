@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { ChatBubble } from '@/baz/ChatBubble'
 
 /**
- * Baz, thinking (spec §6).
+ * Saoirse, thinking (spec §6).
  *
  * In the same bubble the answer arrives in, so the reply grows out of it rather than appearing
  * somewhere else on the screen. Opacity only — the spec rules out vertical bouncing, and it is
@@ -15,7 +15,7 @@ export function TypingBubble({ first = false }: { first?: boolean }): ReactNode 
   return (
     /*
      * `first` is what makes the opening transition land. The mark in the middle of the opening
-     * screen becomes the avatar beside Baz's first reply, and the first reply does not exist
+     * screen becomes the avatar beside Saoirse's first reply, and the first reply does not exist
      * until the first token arrives, a round-trip later. This bubble is on screen at the moment
      * the browser takes its "after" snapshot, so this is where the name has to be.
      */

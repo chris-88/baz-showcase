@@ -112,7 +112,7 @@ function Verdict({
     <Alert variant={result.reachesModel ? 'default' : 'destructive'}>
       {result.reachesModel ? <CheckCircle2Icon /> : <ShieldAlertIcon />}
       <AlertTitle className="flex items-center gap-2">
-        {result.reachesModel ? 'Reaches Baz' : 'Blocked'}
+        {result.reachesModel ? 'Reaches Saoirse' : 'Blocked'}
         <Badge variant="secondary" className="text-2xs">
           {result.category.replaceAll('_', ' ')}
         </Badge>
@@ -129,7 +129,7 @@ function Verdict({
       </AlertTitle>
       <AlertDescription className="space-y-2">
         {result.response === null ? (
-          <span>Baz answers this normally.</span>
+          <span>Saoirse answers this normally.</span>
         ) : (
           <>
             <span>The customer gets back, word for word:</span>

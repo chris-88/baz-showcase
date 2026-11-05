@@ -4,7 +4,7 @@ Guidance for the development agent working on this project. Read this fully befo
 
 ## What this is
 
-The Baz showcase: a narrated five-minute showcase (`/`), the how-it-works explainer (`/how-it-works/:section?`) and the article (`/article`), served as a static site at `https://showcase.saoi.ie`. It was extracted from the Baz proof of concept (`chris-88/digital-hack`, branch `next`) and has no dependency on the product code or any backend. Baz is a conversational layer over simulated retail banking for a fictional Demo Bank; everything shown is synthetic.
+The Saoirse showcase: a narrated five-minute showcase (`/`), the how-it-works explainer (`/how-it-works/:section?`) and the article (`/article`), served as a static site at `https://showcase.saoi.ie`. It was extracted from the Saoirse proof of concept (`chris-88/digital-hack`, branch `next`) and has no dependency on the product code or any backend. Saoirse is a conversational layer over simulated retail banking for a fictional Demo Bank; everything shown is synthetic.
 
 **Stack:** Vite + React + TypeScript · Tailwind v4 · shadcn/ui components (copied from the POC) · React Router (HashRouter) · Zod (copied card contracts) · Vitest + Testing Library · Playwright smoke test · GitHub Pages via GitHub Actions, custom domain `showcase.saoi.ie` (DNS-only CNAME to `chris-88.github.io`). No Supabase.
 
@@ -30,7 +30,7 @@ If you can't satisfy an item, say so explicitly rather than quietly skipping it.
 - Copy lives in `src/content/**`. Values that used to come from the product's server code are JSON in `src/content/data/`, read through `src/content/data/snapshot.ts`. They were produced once by `scripts/snapshot/` (see its README) and are edited by hand from now on; do not re-run it, the POC has moved on.
 - `src/contracts/` holds copies of the card and admin zod schemas the components are typed against. Treat them as local types.
 - `src/baz/`, `src/admin/` and `src/components/` are presentational copies of product components, rendered inert. Do not add network calls.
-- Links into the product (Back to Baz, privacy, ask) are absolute (`productUrl` in `src/app/routes.ts`).
+- Links into the product (Back to Saoirse, privacy, ask) are absolute (`productUrl` in `src/app/routes.ts`).
 - Audio is in `src/assets/showcase/` and imported as modules (hashed, never in `public/`).
 
 ## TypeScript and quality

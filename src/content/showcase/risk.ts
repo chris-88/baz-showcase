@@ -49,7 +49,7 @@ export const RISK_CUES: readonly ShowcaseCue<RiskScene>[] = [
     scene: 'paths',
     presenter: {
       eyebrow: 'Two responses',
-      title: 'Baz explores both ways to respond.',
+      title: 'Saoirse explores both ways to respond.',
     },
   },
   {

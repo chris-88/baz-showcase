@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils'
  * point of the entire feature: a complete, correctly shaped application that is deliberately
  * not sent anywhere.
  *
- * The entry count is this prototype's, not the bank's capture: forty-three is what Baz
+ * The entry count is this prototype's, not the bank's capture: forty-three is what Saoirse
  * generated on a live case. The captured browser submission carried seventy-four, and using
  * that number here would be claiming to have produced something we did not.
  */

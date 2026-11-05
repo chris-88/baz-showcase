@@ -30,7 +30,7 @@ import { cn } from '@/lib/utils'
  * The technical centre of the page.
  *
  * The claim is that the bank already publishes its product journeys in a form a machine can
- * read, and that Baz is another renderer of the same document rather than an imitation of it.
+ * read, and that Saoirse is another renderer of the same document rather than an imitation of it.
  * Prose can assert that. What demonstrates it is highlighting a phrase in a sentence somebody
  * said and watching the field and the wire entry light up with it.
  */
@@ -321,11 +321,11 @@ function JourneyCards(): ReactNode {
                     <p>{form.capturedBasis}.</p>
                     <p>
                       The capture is what a browser sent when a person completed the genuine
-                      journey. It is not what Baz produced.
+                      journey. It is not what Saoirse produced.
                     </p>
                     {form.id === generated.formId && (
                       <p className="text-foreground bg-primary/5 rounded-lg p-3">
-                        On a live case holding twenty facts, Baz had{' '}
+                        On a live case holding twenty facts, Saoirse had{' '}
                         <strong className="font-semibold">{generated.collected}</strong> answers
                         filled in,{' '}
                         <strong className="font-semibold">{generated.outstanding}</strong> questions

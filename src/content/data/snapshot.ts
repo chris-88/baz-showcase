@@ -1,5 +1,5 @@
 /**
- * Typed access to the JSON written once by `scripts/snapshot/run.mjs` against the Baz POC.
+ * Typed access to the JSON written once by `scripts/snapshot/run.mjs` against the Saoirse POC.
  *
  * The content modules used to call the product's server code (`@domain`, `@llm`, `@tenants`)
  * and print the result. They now read what those calls returned. Anything here that takes an

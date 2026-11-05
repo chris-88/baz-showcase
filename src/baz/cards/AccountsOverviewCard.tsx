@@ -56,7 +56,7 @@ export function AccountsOverviewCard({ card }: { card: Payload }): ReactNode {
         ))}
       </ul>
 
-      {/* This month so far. Two figures, no arithmetic between them: the gap is for Baz to say. */}
+      {/* This month so far. Two figures, no arithmetic between them: the gap is for Saoirse to say. */}
       <div className="grid grid-cols-2 divide-x border-t">
         <div className="px-4 py-3">
           <p className="text-muted-foreground text-[11px] font-semibold tracking-wide uppercase">

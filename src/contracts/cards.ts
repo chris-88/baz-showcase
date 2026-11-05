@@ -40,7 +40,7 @@ export const productOptionCardSchema = z.object({
 /**
  * Several named products side by side, to pick one to hear more about (§51).
  *
- * Distinct from `product_options`, which offers the handful of things Baz can actually start
+ * Distinct from `product_options`, which offers the handful of things Saoirse can actually start
  * and whose tap begins an application. This offers what the catalogue holds within a family —
  * nine savings accounts, six credit cards — so somebody can see them together and choose what
  * to ask about. Nothing is started by tapping one.
@@ -164,7 +164,7 @@ export const reuseCardSchema = z.object({
  * Three or more ways to do the same thing, with the trade-off visible (§51).
  *
  * Every figure is computed by the quote engine from the catalogue, never by the model. The card
- * is a conversation device rather than a product picker: choosing one asks Baz to explain it and
+ * is a conversation device rather than a product picker: choosing one asks Saoirse to explain it and
  * to keep asking how the customer intends to use and repay it.
  */
 export const quoteCardSchema = z.object({
@@ -241,7 +241,7 @@ export const reviewCardSchema = z.object({
  * The declarations the bank's own form requires, in the bank's own words.
  *
  * Six of them on the personal loan, covering credit reporting, the accuracy of what has been
- * said, consent to a credit reference check, and contact permission. They are not Baz's
+ * said, consent to a credit reference check, and contact permission. They are not Saoirse's
  * wording and they are not summarised: the text here is the text in the published definition,
  * because a declaration somebody agreed to in a paraphrase is a declaration nobody agreed to.
  *
@@ -350,7 +350,7 @@ export const healthFormCardSchema = z.object({
 })
 
 /**
- * §10 — the plan Baz is offering to keep, before the customer has agreed to it.
+ * §10 — the plan Saoirse is offering to keep, before the customer has agreed to it.
  *
  * Every figure is computed by the plan engine from the case, never by the model: a projected
  * date a customer acts on has to be one the bank can stand over (§40).
@@ -434,7 +434,7 @@ export const mortgageRatesCardSchema = z.object({
 })
 
 /**
- * What happens to what the customer types, shown the first time Baz writes any of it down.
+ * What happens to what the customer types, shown the first time Saoirse writes any of it down.
  *
  * A notice, not a consent. The basis for processing here is not the customer agreeing — it is
  * running the service they asked for — so the card informs and does not gate. Blocking the
@@ -517,7 +517,7 @@ export const CONSENT_SCOPE = ['balances', 'transactions', 'payments'] as const
 
 export const connectAccountsCardSchema = z.object({
   type: z.literal('connect_accounts'),
-  /** Why Baz is asking, tied to what the customer said. One line. */
+  /** Why Saoirse is asking, tied to what the customer said. One line. */
   why: z.string(),
   banks: z.array(z.object({ id: z.enum(LINKABLE_BANK_IDS), name: z.string() })).min(1),
   scope: z.array(z.enum(CONSENT_SCOPE)).min(1),
@@ -619,7 +619,7 @@ export const CARD_TYPES = [
  * Cards that are waiting for the customer to do something.
  *
  * A card that asks for a tap is the question of that turn, and a turn is allowed one question.
- * Baz was putting a comparison of two savings accounts on screen and, in the same breath,
+ * Saoirse was putting a comparison of two savings accounts on screen and, in the same breath,
  * asking what the customer paid in rent and whether they banked jointly — so the reply could
  * answer the text or answer the card, but not both, and whichever they did the other was left
  * hanging. The customer rightly read it as being asked three things at once.

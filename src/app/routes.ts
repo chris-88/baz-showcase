@@ -1,7 +1,7 @@
 /**
  * Every address in one place. Hash routing: GitHub Pages has no rewrites.
  *
- * The showcase is this site's home page. Baz itself, its landing page, its privacy notice and
+ * The showcase is this site's home page. Saoirse itself, its landing page, its privacy notice and
  * the questions form live in the product at `product`, so links to them are plain absolute
  * links rather than routes of this app.
  */

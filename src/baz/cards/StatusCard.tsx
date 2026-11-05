@@ -19,7 +19,7 @@ type Application = Payload['applications'][number]
 const VISIBLE_STEPS = 5
 
 /**
- * §14, §59 — rendered entirely from the case. Whatever Baz wrote alongside it, this is what is
+ * §14, §59 — rendered entirely from the case. Whatever Saoirse wrote alongside it, this is what is
  * actually true, and the state's own label always accompanies the colour.
  */
 export function StatusCard({
@@ -95,7 +95,7 @@ function NotifyRow({ onEnable }: { onEnable: () => Promise<SubscribeResult> }): 
          * thing between them and it is two taps. Show the taps, not a sentence about them.
          */
         <div className="-mx-3 -mb-3 border-t">
-          <InstallSteps lead="Notifications need Baz on your home screen first. Two taps:" />
+          <InstallSteps lead="Notifications need Saoirse on your home screen first. Two taps:" />
         </div>
       ) : state.state === 'unsupported' || state.state === 'failed' ? (
         <p className="text-muted-foreground text-xs">{state.reason}</p>

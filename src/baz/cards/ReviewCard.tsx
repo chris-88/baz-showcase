@@ -35,12 +35,12 @@ export function ReviewCard({
   const [busy, setBusy] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
-  // Only after the server accepted it. Baz's reply arrives separately and is not evidence.
+  // Only after the server accepted it. Saoirse's reply arrives separately and is not evidence.
   if (submitted) {
     return (
       <ConfirmationCard
         title="Application submitted"
-        body={`Your ${card.displayName.toLowerCase()} application is with us. Baz will tell you the moment anything changes.`}
+        body={`Your ${card.displayName.toLowerCase()} application is with us. Saoirse will tell you the moment anything changes.`}
       />
     )
   }

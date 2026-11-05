@@ -29,7 +29,7 @@ import { settle } from './ease'
  * The first sixty seconds, drawn.
  *
  * Text-led, from the product's own parts: life events as tiles, journeys as cards that drift
- * apart, one message in the customer's bubble, Baz's three verbs, and the capability layer
+ * apart, one message in the customer's bubble, Saoirse's three verbs, and the capability layer
  * the bank already owns. Nothing here was processed by a model and the last frame says so.
  */
 export function OpportunityScene({
@@ -298,7 +298,7 @@ const VERBS = [
 
 const NEEDS = ['Mortgage', 'Joint account', 'Savings'] as const
 
-/** Baz's name, its three verbs with an arrow between each, and the needs they find. */
+/** Saoirse's name, its three verbs with an arrow between each, and the needs they find. */
 function MeetBaz({ p, still }: { readonly p: number; readonly still: boolean }): ReactNode {
   return (
     <div className="flex w-full max-w-3xl flex-col items-center gap-10">

@@ -22,8 +22,8 @@ export function Collaborate({ className }: { readonly className?: string }): Rea
               Want to work on this?
             </h2>
             <p className="text-muted-foreground text-sm text-pretty">
-              Baz is a proof of concept. If you’d like to take it further, in a bank or alongside
-              one, leave your details.
+              Saoirse is a proof of concept. If you’d like to take it further, in a bank or
+              alongside one, leave your details.
             </p>
           </div>
           <Button asChild>

@@ -29,7 +29,7 @@ export function PhoneFrame({
   readonly children: ReactNode
   /** How far past its design size the phone may grow in a big box. */
   readonly maxScale?: number
-  /** No status bar or Baz header: the children own the whole screen, as a lock screen does. */
+  /** No status bar or Saoirse header: the children own the whole screen, as a lock screen does. */
   readonly bare?: boolean
 }): ReactNode {
   const box = useRef<HTMLDivElement>(null)

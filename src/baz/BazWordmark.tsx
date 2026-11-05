@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
 /**
- * The Baz wordmark, from `baz-name.svg`.
+ * The Saoirse wordmark, from `baz-name.svg`.
  *
  * Three drawn letters rather than type: a `b` built from a stem and a ring, an `a` from a ring
  * and a stem the other way up, and a `z` from two bars and a diagonal. Only the `b` carries
@@ -33,7 +33,7 @@ export function BazWordmark({
     <svg
       viewBox="0 0 194 72"
       role="img"
-      aria-label="Baz"
+      aria-label="Saoirse"
       className={cn('text-baz-primary h-7 w-auto', className)}
       {...(transitionName === undefined ? {} : { style: { viewTransitionName: transitionName } })}
     >

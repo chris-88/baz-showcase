@@ -4,7 +4,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 /**
  * The showcase loads on demand, for the same reason the explainer does: it is for a room,
  * not a customer, and it carries the full animation library and three cue files that
- * nobody opening Baz to say something should have to download first.
+ * nobody opening Saoirse to say something should have to download first.
  */
 const Page = lazy(async () => ({
   default: (await import('@/surfaces/Showcase')).Showcase,

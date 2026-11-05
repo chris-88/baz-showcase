@@ -142,7 +142,7 @@ export const codeCallouts: readonly { readonly line: string; readonly note: stri
 /**
  * What runs where, for the channels diagram.
  *
- * The honest version of the claim: the definition is genuinely shared, and Baz genuinely reads
+ * The honest version of the claim: the definition is genuinely shared, and Saoirse genuinely reads
  * it. Whether a production conversational channel would submit through the same endpoint is a
  * direction, not something this prototype has done, and the page says so.
  */
@@ -152,7 +152,7 @@ export const channels = {
   renderers: [
     { name: 'Web', detail: 'The existing online journey', status: 'In production' },
     { name: 'Mobile', detail: 'The banking app', status: 'In production' },
-    { name: 'Baz', detail: 'A conversational renderer of the same definition', status: 'POC' },
+    { name: 'Saoirse', detail: 'A conversational renderer of the same definition', status: 'POC' },
   ],
   caption: 'Different experiences. One underlying source of journey truth.',
 } as const

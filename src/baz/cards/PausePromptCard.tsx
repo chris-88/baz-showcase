@@ -10,7 +10,7 @@ type Payload = Extract<CardPayload, { type: 'pause_prompt' }>
 /**
  * §6 Stage 8 — the advisory that holds an application back.
  *
- * Both choices are presented plainly and neither is pre-selected: Baz explains the trade-off,
+ * Both choices are presented plainly and neither is pre-selected: Saoirse explains the trade-off,
  * the customer decides. The explanation comes from the deterministic advisory rule, not from
  * the model's judgement.
  */

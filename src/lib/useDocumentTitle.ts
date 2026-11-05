@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 /**
  * What the browser tab says.
  *
- * Every route rendered as "Demo Bank", so a customer with Baz open alongside their
+ * Every route rendered as "Demo Bank", so a customer with Saoirse open alongside their
  * banking had two identical tabs, the back button offered a list of identical entries, and a
  * screenshot of any page named the bank rather than the page. The title is the one piece of
  * chrome that has to work before the page is even read.

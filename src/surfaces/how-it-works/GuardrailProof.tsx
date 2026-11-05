@@ -11,7 +11,7 @@ import { Claim, Surface, Tile } from './parts'
  *
  * Ten cases from the eval set, each with what the gate is expected to do and, for the blocked
  * ones, the exact sentence the customer gets, read from `refusals.ts` in whichever tone bucket
- * is selected. The allowed rows say only that the turn reaches Baz, because what Baz then says
+ * is selected. The allowed rows say only that the turn reaches Saoirse, because what Saoirse then says
  * is the model's and this page does not pretend otherwise.
  */
 export function GuardrailProof(): ReactNode {
@@ -66,7 +66,7 @@ export function GuardrailProof(): ReactNode {
               <div className="min-w-0">
                 {entry.previousAssistantTurn !== undefined && (
                   <p className="text-muted-foreground mb-1 text-[11px] italic">
-                    Baz had asked: {entry.previousAssistantTurn}
+                    Saoirse had asked: {entry.previousAssistantTurn}
                   </p>
                 )}
                 <p className="bg-primary text-primary-foreground ml-auto w-fit max-w-[92%] rounded-2xl rounded-br-sm px-3 py-1.5 text-[13px] leading-snug sm:ml-0">
@@ -87,7 +87,7 @@ export function GuardrailProof(): ReactNode {
                         : 'bg-success/10 text-success',
                     )}
                   >
-                    {blocked ? 'blocked' : 'reaches Baz'}
+                    {blocked ? 'blocked' : 'reaches Saoirse'}
                   </span>
                   <span className="bg-muted rounded-md px-1.5 py-0.5 font-mono text-[10.5px]">
                     {entry.category}
@@ -108,7 +108,7 @@ export function GuardrailProof(): ReactNode {
                     </span>
                   ) : (
                     <span className="text-muted-foreground">
-                      In scope. The turn reaches the model and Baz answers it.
+                      In scope. The turn reaches the model and Saoirse answers it.
                     </span>
                   )}
                 </p>

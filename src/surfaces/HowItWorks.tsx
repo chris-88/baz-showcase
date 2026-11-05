@@ -45,7 +45,7 @@ import { Collaborate } from '@/surfaces/Collaborate'
  * size, and the result was unreadable however good the sentences were.
  */
 export function HowItWorks(): ReactNode {
-  useDocumentTitle('How Baz works')
+  useDocumentTitle('How Saoirse works')
 
   const { section } = useParams<{ section: string }>()
   const { active, progress, beginJump } = useActiveChapter(CHAPTERS)
@@ -77,7 +77,7 @@ export function HowItWorks(): ReactNode {
           <Button asChild variant="ghost" size="sm" className="gap-1.5">
             <a href={productUrl.baz}>
               <ArrowLeftIcon className="size-4" />
-              Back to Baz
+              Back to Saoirse
             </a>
           </Button>
         </div>

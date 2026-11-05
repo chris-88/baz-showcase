@@ -161,8 +161,8 @@ export function PersonaProof(): ReactNode {
           <p className="text-muted-foreground text-[11.5px] leading-relaxed">
             The style block is composed after the policy block and labelled as style. It is read
             from the database on every turn, so moving a slider in the console changes the next
-            thing Baz says, and no slider can change what it may discuss, which tools it has, or any
-            customer protection.
+            thing Saoirse says, and no slider can change what it may discuss, which tools it has, or
+            any customer protection.
           </p>
         </div>
       </div>

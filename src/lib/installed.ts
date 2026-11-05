@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 /**
- * Where Baz is running, as far as installing it is concerned.
+ * Where Saoirse is running, as far as installing it is concerned.
  *
  * Three facts the install moment turns on, none of which the app knew until now: whether it
  * is already running as an installed app, whether this is an iPhone (where Safari has no
@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react'
  * a native prompt it is holding for us.
  *
  * The first one is the one that was missing. With no `standalone` check anywhere, the
- * installed app still showed "Install Baz" on its own landing page.
+ * installed app still showed "Install Saoirse" on its own landing page.
  */
 
 /** Running from the home screen, rather than in a browser tab. */

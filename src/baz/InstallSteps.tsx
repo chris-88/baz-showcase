@@ -4,7 +4,7 @@ import { ShareIcon, SquarePlusIcon } from 'lucide-react'
 import { DURATION, EASE, useStill } from '@/lib/motion'
 
 /**
- * The two taps that put Baz on an iPhone's home screen.
+ * The two taps that put Saoirse on an iPhone's home screen.
  *
  * In one place because it is wanted in three: the card that offers the home screen after
  * signing in, and the two spots where somebody asks for notifications in Safari and cannot

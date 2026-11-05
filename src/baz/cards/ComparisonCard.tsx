@@ -11,7 +11,7 @@ type Payload = Extract<CardPayload, { type: 'comparison' }>
 /**
  * Several products from the catalogue, side by side (§51).
  *
- * Not a product picker: tapping one starts nothing, it asks Baz to go through that one. The
+ * Not a product picker: tapping one starts nothing, it asks Saoirse to go through that one. The
  * catalogue holds nine savings accounts and six credit cards, and describing four of them in a
  * paragraph asks somebody to hold four descriptions in their head while deciding — which is the
  * thing a comparison is for.
@@ -105,7 +105,7 @@ export function ComparisonCard({
 
                 {option.endsIn !== null && (
                   <p className="text-muted-foreground text-2xs mt-2">
-                    Goes to {option.endsIn} — Baz takes you to the door, not through it.
+                    Goes to {option.endsIn} — Saoirse takes you to the door, not through it.
                   </p>
                 )}
 

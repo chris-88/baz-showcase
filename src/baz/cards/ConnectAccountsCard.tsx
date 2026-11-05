@@ -33,7 +33,7 @@ const SCOPE_LINES: Readonly<Record<Scope, { readonly label: string; readonly det
  * bank is picked, the aggregator says exactly what it will share and for how long, and the
  * customer allows it or does not. Nothing is read before the tap, and the tap is the only
  * thing that reads anything (Invariant 1). The panel is written in the aggregator's idiom,
- * not Baz's, because that is who the customer is giving permission to.
+ * not Saoirse's, because that is who the customer is giving permission to.
  *
  * No logos. There are none in the repo and no third-party assets are added for a prototype,
  * so a bank is a name on a tile.
@@ -79,7 +79,7 @@ export function ConnectAccountsCard({
     setBusy(true)
     void Promise.resolve(onDecline())
       .then(() =>
-        setDone({ label: 'Not linked', note: 'Baz works from what you tell it instead.' }),
+        setDone({ label: 'Not linked', note: 'Saoirse works from what you tell it instead.' }),
       )
       .catch(() => setBusy(false))
   }
@@ -168,7 +168,7 @@ export function ConnectAccountsCard({
 /**
  * The aggregator's own screen, as a panel inside the card.
  *
- * Written as Nexus, in the second person about Baz, because that is how a real consent reads:
+ * Written as Nexus, in the second person about Saoirse, because that is how a real consent reads:
  * the customer is telling a third party what it may pass on. Every line is from the contract's
  * scope; the panel cannot promise less than will be read.
  */
@@ -193,7 +193,7 @@ function ConsentPanel({
     <div className="bg-muted/40 border-t">
       <div className="space-y-2.5 px-4 pt-3 pb-3">
         <p className="text-sm font-semibold">
-          Nexus will share your {bank.name} accounts with Baz:
+          Nexus will share your {bank.name} accounts with Saoirse:
         </p>
         <ul className="space-y-1.5">
           {scope.map((item) => (

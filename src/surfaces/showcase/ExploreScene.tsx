@@ -55,9 +55,9 @@ export function ExploreScene({ onRestart }: { readonly onRestart: () => void }):
             <Destination
               number="01"
               code={openBazCode}
-              codeAlt="QR code linking to the live Baz demonstration"
+              codeAlt="QR code linking to the live Saoirse demonstration"
               address={showcaseConfig.liveDemoShort}
-              title="Try Baz"
+              title="Try Saoirse"
               line="The working prototype, on your own phone. Use made-up details; nothing reaches a bank."
               action={
                 <Button
@@ -66,7 +66,7 @@ export function ExploreScene({ onRestart }: { readonly onRestart: () => void }):
                   className="text-brand-deep h-12 gap-2.5 bg-white px-6 text-base hover:bg-white/90"
                 >
                   <a href={showcaseConfig.liveDemoUrl} target="_blank" rel="noreferrer">
-                    Launch Baz
+                    Launch Saoirse
                     <ArrowRightIcon className="size-4" />
                   </a>
                 </Button>
@@ -98,7 +98,7 @@ export function ExploreScene({ onRestart }: { readonly onRestart: () => void }):
               codeAlt="QR code linking to the questions and collaboration form"
               address={showcaseConfig.askShort}
               title="Ask, or work on this"
-              line="A question for after the session, or an offer to take Baz further. A person replies."
+              line="A question for after the session, or an offer to take Saoirse further. A person replies."
               action={
                 <Button
                   asChild

@@ -9,7 +9,7 @@ import { BazMark } from '@/baz/BazMark'
  * can read it (§36). The time is the demonstration's; the date is the day the watch is met.
  */
 export const NOTIFICATION_COPY =
-  'Baz has an update about something you’re working on with us. Open Baz to pick it up.'
+  'Saoirse has an update about something you’re working on with us. Open Saoirse to pick it up.'
 
 export function LockScreen(): ReactNode {
   return (
@@ -26,7 +26,7 @@ export function LockScreen(): ReactNode {
           </span>
           <div className="min-w-0 flex-1">
             <div className="flex items-baseline justify-between gap-2">
-              <p className="text-[13px] font-semibold">Baz</p>
+              <p className="text-[13px] font-semibold">Saoirse</p>
               <p className="text-[11px] opacity-60">now</p>
             </div>
             <p className="mt-0.5 text-[13px] leading-snug">{NOTIFICATION_COPY}</p>

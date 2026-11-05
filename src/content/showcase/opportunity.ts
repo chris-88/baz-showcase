@@ -48,7 +48,7 @@ export const OPPORTUNITY_CUES: readonly ShowcaseCue<OpportunityScene>[] = [
     endMs: 36_920,
     scene: 'meet',
     presenter: {
-      eyebrow: 'Meet Baz',
+      eyebrow: 'Meet Saoirse',
       title: 'Discover, understand, connect.',
     },
   },

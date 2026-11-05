@@ -23,7 +23,7 @@ export const article = {
   eyebrow: 'Article · Draft for discussion',
   title: 'Who owns the customer relationship in the age of AI?',
   standfirst:
-    'The opportunity for conversational banking, the risk of disintermediation, and why Baz explores both.',
+    'The opportunity for conversational banking, the risk of disintermediation, and why Saoirse explores both.',
   byline: 'Christopher Quinn, October 2026',
   readingTime: '8 minutes',
 
@@ -42,7 +42,7 @@ export const article = {
       heading: 'What AI changes',
       paragraphs: [
         'The current generation of language models, wrapped in a conservative system, can take an unstructured account of somebody’s life and turn it into structure, hold that structure over time, and choose from a fixed set of actions. Those were the jobs the relationship manager did. The constraint that rationed them has gone.',
-        'Baz is a working proof of that. It is a conversational layer over one retail bank’s simulated product journeys. The customer says what they are trying to do; Baz works out what it involves, asks only for what it does not know, and starts several applications at once from facts collected once. It reads the bank’s published form definitions and prepares the exact request the bank’s own website would send, and it never sends it. It was built by one person in sixteen working days, and a twelve-turn conversation costs about 55 cent in model fees, measured.[^2]',
+        'Saoirse is a working proof of that. It is a conversational layer over one retail bank’s simulated product journeys. The customer says what they are trying to do; Saoirse works out what it involves, asks only for what it does not know, and starts several applications at once from facts collected once. It reads the bank’s published form definitions and prepares the exact request the bank’s own website would send, and it never sends it. It was built by one person in sixteen working days, and a twelve-turn conversation costs about 55 cent in model fees, measured.[^2]',
         'The point is not the demo. The point is that the part of the stack that understands the customer, remembers what they are trying to do and coordinates the rest is now cheap, and no longer needs a bank to build it.',
       ],
     },
@@ -62,15 +62,15 @@ export const article = {
       paragraphs: [
         'A bank can be the relationship layer itself: the place customers choose to say what they are trying to do, because the bank remembers appropriately, can act immediately, can bring a competent person into the conversation without a restart, and is accountable when it gets something wrong. That has to be earned every time a customer comes back, and it carries an uncomfortable condition. The layer only earns that trust if it will sometimes tell a customer that a competitor’s product is better.',
         'Or a bank can serve the customer’s chosen assistant through the same bounded capabilities: machine-readable products, discoverable eligibility, reliable status, and authority that is scoped to what the customer authorised. That posture gives up the conversation and competes on price, service and reliability inside somebody else’s interface.',
-        'The realistic answer is both, and the same architectural work supports both: governed customer state with provenance, a catalogue of bounded tools the model can call and nothing else, event-driven state, and a decent handover to a person. Baz runs the first posture end to end and prototypes the second by exposing itself as a tool another agent can call, with every guardrail unchanged.',
+        'The realistic answer is both, and the same architectural work supports both: governed customer state with provenance, a catalogue of bounded tools the model can call and nothing else, event-driven state, and a decent handover to a person. Saoirse runs the first posture end to end and prototypes the second by exposing itself as a tool another agent can call, with every guardrail unchanged.',
         'What is not defensible is the posture most banks are currently in: keep improving individual product journeys and let the question answer itself. That is a choice to become a provider, made by nobody, on no particular date.',
       ],
     },
     {
       id: 'today',
-      heading: 'What Baz demonstrates today, and what it does not',
+      heading: 'What Saoirse demonstrates today, and what it does not',
       paragraphs: [
-        'The principle Baz runs on is easy to state. The model proposes; the bank’s systems decide; people judge. The model turns what a customer says into structure and decides how to ask the next question. It cannot create, submit, pause or resume an application, grant consent or make a declaration, because no such tool exists. The customer’s tap commits, and the server checks state and rules before writing anything.',
+        'The principle Saoirse runs on is easy to state. The model proposes; the bank’s systems decide; people judge. The model turns what a customer says into structure and decides how to ask the next question. It cannot create, submit, pause or resume an application, grant consent or make a declaration, because no such tool exists. The customer’s tap commits, and the server checks state and rules before writing anything.',
         'That boundary is structural rather than requested. NIST’s red-teaming found successful hijacking attacks against every frontier model it tested,[^7] which is an argument for narrow authority, not for waiting.',
       ],
       columns: [
@@ -80,7 +80,7 @@ export const article = {
             'Discovery from a life event, with facts recorded against a catalogue and reused across concurrent applications',
             'Published form definitions read, filled from what is known, and the submission packet built for inspection only',
             'Partner participation, deterministic advisories, return after bank-side events, a presenter console with provenance',
-            'Email-code sign-in and synthetic bank-held data; an MCP server so another agent can use Baz within the same guardrails',
+            'Email-code sign-in and synthetic bank-held data; an MCP server so another agent can use Saoirse within the same guardrails',
           ],
         },
         {

@@ -1,10 +1,10 @@
 /**
- * The two published journeys Baz reads, and what is honestly claimable about each.
+ * The two published journeys Saoirse reads, and what is honestly claimable about each.
  *
  * Two different counts live here and the difference matters more than either number. The
  * captured count is how many entries a real browser submitted when somebody completed the
- * genuine journey; the generated count is how many Baz produced for a particular conversation.
- * They are not the same claim, and a page that shows the captured number beside Baz's name
+ * genuine journey; the generated count is how many Saoirse produced for a particular conversation.
+ * They are not the same claim, and a page that shows the captured number beside Saoirse's name
  * says we generated something we did not.
  */
 
@@ -83,7 +83,7 @@ export const workedExample = {
       fieldLabel: 'What is the purpose of your loan?',
       toscana: 'Purpose_Of_Loan',
       entries: [{ key: 'input_500', value: 'Car purchase' }],
-      note: 'The form offers seven purposes. The answer has to be one of them, so Baz resolves the phrase to the form’s own spelling or asks.',
+      note: 'The form offers seven purposes. The answer has to be one of them, so Saoirse resolves the phrase to the form’s own spelling or asks.',
     },
     {
       id: 'amount',

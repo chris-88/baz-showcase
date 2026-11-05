@@ -12,7 +12,7 @@ import { demoDomainConfig, refusalFor } from '@/content/data/snapshot'
 import type { AdminOverview } from '@/contracts/admin'
 
 /**
- * What Baz will and will not do, and what happens when somebody tries.
+ * What Saoirse will and will not do, and what happens when somebody tries.
  *
  * Everything here is data the gate reads, shown as the gate reads it — the categories, what is
  * in and out of scope, and the exact words a blocked request gets back. §25 is explicit that
@@ -37,7 +37,7 @@ export function GuardrailsScreen({
     <div className="space-y-6">
       <PageHeader
         title="Guardrails"
-        description="A classifier plus deterministic checks run in front of the model. A blocked request never reaches Baz at all, and the refusal never contains the answer. §25, §26"
+        description="A classifier plus deterministic checks run in front of the model. A blocked request never reaches Saoirse at all, and the refusal never contains the answer. §25, §26"
         actions={<GuardrailTest />}
       />
 
@@ -47,8 +47,8 @@ export function GuardrailsScreen({
           <CardHeader>
             <CardTitle>What gets through</CardTitle>
             <CardDescription>
-              Every message is classified before Baz sees it. These are the categories and what each
-              one gets back.
+              Every message is classified before Saoirse sees it. These are the categories and what
+              each one gets back.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-5">
@@ -58,7 +58,7 @@ export function GuardrailsScreen({
                 <div className="flex items-center gap-2">
                   <h3 className="flex-1 text-sm font-medium">{category.label}</h3>
                   <Badge variant={category.reachesModel ? 'default' : 'secondary'}>
-                    {category.reachesModel ? 'reaches Baz' : 'blocked'}
+                    {category.reachesModel ? 'reaches Saoirse' : 'blocked'}
                   </Badge>
                 </div>
                 <p className="text-muted-foreground text-sm">{category.description}</p>
@@ -129,7 +129,7 @@ export function GuardrailsScreen({
             </CardHeader>
             <CardContent className="flex items-center justify-between gap-4">
               <div className="space-y-0.5">
-                <Label htmlFor="pause">Pause Baz</Label>
+                <Label htmlFor="pause">Pause Saoirse</Label>
                 <p className="text-muted-foreground text-sm">
                   Every request is turned away at the gate, without calling a model. §43
                 </p>

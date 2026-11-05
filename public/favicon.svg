@@ -1,12 +1,12 @@
 <!--
-  Baz's app icon: the `b` from docs/baz-icon.svg, reversed out of the brand blue.
+  Saoirse's app icon: the `b` from docs/baz-icon.svg, reversed out of the brand blue.
 
   The artwork is a single colour on nothing, which is right for a mark sitting in a page and
   wrong for an icon — a home screen composites it on whatever it likes, so the tile and the ink
   are both written out here. The glyph is the same geometry, scaled and centred; nothing about
   the drawing changes.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Baz">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Saoirse">
   <rect width="256" height="256" rx="56" fill="#0029F8"/>
   <g transform="translate(60,42) scale(2.14)">
     <circle cx="32" cy="40" r="24.5" fill="none" stroke="#FFFFFF" stroke-width="15"/>

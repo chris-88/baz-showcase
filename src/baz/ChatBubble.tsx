@@ -6,7 +6,7 @@ import { CustomerAvatar } from '@/baz/CustomerAvatar'
 export type ChatAuthor = 'baz' | 'customer'
 
 /**
- * One turn in the conversation. Baz speaks on the left in a light bubble, the customer on the
+ * One turn in the conversation. Saoirse speaks on the left in a light bubble, the customer on the
  * right in the action colour.
  *
  * Portable by construction: no tenant and no shell imports (Invariant 11).
@@ -20,7 +20,7 @@ export function ChatBubble({
   author: ChatAuthor
   children: ReactNode
   showAvatar?: boolean
-  /** The first Baz turn, which is where the opening transition lands. */
+  /** The first Saoirse turn, which is where the opening transition lands. */
   first?: boolean
 }): ReactNode {
   const isBaz = author === 'baz'
@@ -33,7 +33,7 @@ export function ChatBubble({
             /*
              * The landing point for the opening transition (spec §5).
              *
-             * Only the first Baz turn carries the name: `view-transition-name` has to be unique
+             * Only the first Saoirse turn carries the name: `view-transition-name` has to be unique
              * on the page, and a transcript of six replies would otherwise declare it six times
              * and the browser would animate none of them.
              */

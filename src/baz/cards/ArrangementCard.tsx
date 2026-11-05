@@ -11,7 +11,7 @@ type Payload = Extract<CardPayload, { type: 'arrangement' }>
 /**
  * How the customer's money should be split across accounts, with one tap to start all of it.
  *
- * The moment a live conversation got the wrong way round. Baz offered a choice of two savings
+ * The moment a live conversation got the wrong way round. Saoirse offered a choice of two savings
  * accounts; the customer replied with the right answer worked out alone, the lump sum locked
  * away, €200 a month for the bonus, the rest where it earns most. This card is that answer,
  * arriving before they have to work it out, from the engine rather than from anybody's memory

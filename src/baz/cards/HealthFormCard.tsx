@@ -113,7 +113,7 @@ export function HealthFormCard({
           {busy ? 'Saving…' : 'Send these answers'}
         </Button>
         <p className="text-muted-foreground text-2xs mt-2 text-center">
-          These go straight into your application. Baz never sees them in the conversation.
+          These go straight into your application. Saoirse never sees them in the conversation.
         </p>
       </div>
     </Card>

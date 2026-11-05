@@ -1,11 +1,11 @@
 {
   "#/privacy": {
     "type": "sign_in",
-    "title": "Save this with Baz",
+    "title": "Save this with Saoirse",
     "points": [
       "Keep what you have started, and pick it up later",
       "Carry on from your phone, or any other device",
-      "Hear from Baz when something moves"
+      "Hear from Saoirse when something moves"
     ],
     "reassurance": "This does not open a Demo Bank account or apply for anything.",
     "whyHref": "#/privacy"

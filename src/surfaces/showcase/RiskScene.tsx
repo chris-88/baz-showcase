@@ -47,7 +47,7 @@ export function RiskScene({
         <div className="flex flex-col items-center text-center">
           <Arrive order={0} still={still}>
             <span className="block size-24 sm:size-32 xl:size-40">
-              <BazMark title="Baz" breathing={!still} />
+              <BazMark title="Saoirse" breathing={!still} />
             </span>
           </Arrive>
           <Arrive order={1} still={still}>
@@ -363,7 +363,7 @@ function Paths({ p, still }: { readonly p: number; readonly still: boolean }): R
               </span>
               <Claim kind="poc" />
             </div>
-            <p className="mt-4 text-lg font-bold tracking-tight">A direct Baz relationship</p>
+            <p className="mt-4 text-lg font-bold tracking-tight">A direct Saoirse relationship</p>
             <p className="text-muted-foreground mt-1.5 text-[13.5px] leading-relaxed">
               The bank’s own assistant, on its own journeys. What you just watched.
             </p>
@@ -381,7 +381,8 @@ function Paths({ p, still }: { readonly p: number; readonly still: boolean }): R
               Secure access for other assistants
             </p>
             <p className="text-muted-foreground mt-1.5 text-[13.5px] leading-relaxed">
-              Baz is already an MCP server: any assistant can call it, every guardrail unchanged.
+              Saoirse is already an MCP server: any assistant can call it, every guardrail
+              unchanged.
             </p>
           </Surface>
         </Arrive>

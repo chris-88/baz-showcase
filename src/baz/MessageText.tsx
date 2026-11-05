@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 
 /**
- * What Baz said, with the little markdown it actually uses.
+ * What Saoirse said, with the little markdown it actually uses.
  *
  * Bold and bullets, and nothing else. The model reaches for `**label:**` and `- ` when it is
  * listing what changed since somebody was last here — which is the one turn the prompt asks

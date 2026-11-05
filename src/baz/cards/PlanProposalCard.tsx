@@ -13,10 +13,10 @@ type Payload = Extract<CardPayload, { type: 'plan_proposal' }>
 const euro = (amount: number): string => `€${amount.toLocaleString('en-IE')}`
 
 /**
- * §10 — the plan Baz is offering to keep, before the customer has agreed to it.
+ * §10 — the plan Saoirse is offering to keep, before the customer has agreed to it.
  *
  * Every number here was computed by the plan engine from the case. The card shows the whole
- * shape of the commitment — the target, the milestones, and when Baz will be back — because
+ * shape of the commitment — the target, the milestones, and when Saoirse will be back — because
  * agreeing to be contacted for months is not something to slip past somebody in a sentence.
  */
 export function PlanProposalCard({

@@ -1,6 +1,6 @@
 {
   "tenant": "Demo Bank",
-  "assistantName": "Baz",
+  "assistantName": "Saoirse",
   "inScope": [
     "Demo Bank products and services",
     "the customer’s existing accounts and products with us",
@@ -100,7 +100,7 @@
       "id": "unsupported",
       "label": "Unsupported",
       "reachesModel": false,
-      "description": "An instruction to move money or change an account, a transaction, not a question. Never a question about what Baz can do: those reach Baz, which knows the answer.",
+      "description": "An instruction to move money or change an account, a transaction, not a question. Never a question about what Saoirse can do: those reach Saoirse, which knows the answer.",
       "examples": [
         "Transfer €500 to my sister",
         "Cancel my card",

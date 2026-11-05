@@ -82,7 +82,7 @@ export const capabilities: readonly Capability[] = [
   {
     group: 'conversation',
     title: `${String(MEASURED.mortgageRates)} published mortgage rates`,
-    body: 'Indexed by buyer type, BER, amount and term. All four are required, so Baz asks rather than quoting a range, and the server computes the repayments.',
+    body: 'Indexed by buyer type, BER, amount and term. All four are required, so Saoirse asks rather than quoting a range, and the server computes the repayments.',
     claim: 'poc',
     source: '_shared/tenants/demo/mortgage-rates-select.ts',
   },
@@ -103,7 +103,7 @@ export const capabilities: readonly Capability[] = [
   {
     group: 'conversation',
     title: 'Two of the bank’s own forms, read',
-    body: `SuperSaver (${String(MEASURED.formFields.supersaver)} controls) and the personal loan (${String(MEASURED.formFields.personalLoan)}), parsed from the published definitions. Baz asks their questions in conversation, ticks their declarations in their wording, and generates a packet nobody sends.`,
+    body: `SuperSaver (${String(MEASURED.formFields.supersaver)} controls) and the personal loan (${String(MEASURED.formFields.personalLoan)}), parsed from the published definitions. Saoirse asks their questions in conversation, ticks their declarations in their wording, and generates a packet nobody sends.`,
     claim: 'poc',
     source: '_shared/domain/forms, docs/architecture/digital-forms.md',
   },
@@ -160,15 +160,15 @@ export const capabilities: readonly Capability[] = [
   },
   {
     group: 'around',
-    title: 'Baz for the partner',
-    body: 'Today the second applicant gets a task list, not a conversation. Giving them Baz in partner mode, scoped to their own tasks, is the obvious next step and is not built.',
+    title: 'Saoirse for the partner',
+    body: 'Today the second applicant gets a task list, not a conversation. Giving them Saoirse in partner mode, scoped to their own tasks, is the obvious next step and is not built.',
     claim: 'production',
     source: 'docs/start-here/project-status.md',
   },
   {
     group: 'around',
     title: 'A plan the customer can browse',
-    body: 'Plans, milestones, check-ins and watches are real in the database and in the console. The customer meets them only as a card and as Baz raising a check-in; a surface of their own is a direction.',
+    body: 'Plans, milestones, check-ins and watches are real in the database and in the console. The customer meets them only as a card and as Saoirse raising a check-in; a surface of their own is a direction.',
     claim: 'production',
     source: 'docs/features/customer-plans.md',
   },
@@ -198,7 +198,7 @@ export const capabilities: readonly Capability[] = [
   {
     group: 'bank',
     title: 'Products and rates as rows',
-    body: 'Reword a product, change a rate or add one without a deploy. Each payload is validated against the published file’s own shape both ways, so Baz can be handed a different catalogue but never a malformed one.',
+    body: 'Reword a product, change a rate or add one without a deploy. Each payload is validated against the published file’s own shape both ways, so Saoirse can be handed a different catalogue but never a malformed one.',
     claim: 'poc',
     source: '§51, src/admin/ProductsScreen.tsx',
   },

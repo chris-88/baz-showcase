@@ -55,7 +55,7 @@ export type Beat = {
   readonly id: string
   /** The §6 stage this beat belongs to. */
   readonly stage: SpecStage
-  /** The engine's stage for the turn, when the beat is a Baz turn. */
+  /** The engine's stage for the turn, when the beat is a Saoirse turn. */
   readonly engineStage?: Stage
   readonly channel: Channel
   readonly title: string
@@ -786,8 +786,8 @@ const STATUS_ON_RETURN: Card = {
 
 /** The console's fixed copy, from `supabase/functions/admin/index.ts`. */
 export const NOTIFICATION = {
-  title: 'Baz',
-  body: 'Baz has an update about something you’re working on with us. Open Baz to pick it up.',
+  title: 'Saoirse',
+  body: 'Saoirse has an update about something you’re working on with us. Open Saoirse to pick it up.',
   link: '/#/baz?n=<single-use code>',
 } as const
 
@@ -811,7 +811,7 @@ export const story: readonly Beat[] = [
     cards: [],
     system: {
       events: ['case_created'],
-      note: 'An anonymous session and an empty case. There is no greeting and no product menu: the screen asks one question and waits. Baz says it is an AI assistant the first time it writes anything down.',
+      note: 'An anonymous session and an empty case. There is no greeting and no product menu: the screen asks one question and waits. Saoirse says it is an AI assistant the first time it writes anything down.',
     },
     claim: 'poc',
     source: '§6 Stage 1, §31',
@@ -838,7 +838,7 @@ export const story: readonly Beat[] = [
         'housing.firstTimeBuyer = true',
       ],
       events: ['context_captured', 'data_notice_shown', 'turn_tools'],
-      note: 'Gate: banking, not sensitive. The notice appears the moment Baz first writes something down, built by the server rather than the model.',
+      note: 'Gate: banking, not sensitive. The notice appears the moment Saoirse first writes something down, built by the server rather than the model.',
     },
     claim: 'synthetic',
     source: '§6 Stage 2; opening.json turn 1',
@@ -1037,7 +1037,7 @@ export const story: readonly Beat[] = [
     ],
     system: {
       events: ['product_offered ×5', 'application_created ×4'],
-      note: 'Four applications, started by one tap through case-action. Protection is left on the card for later rather than declined, so Baz may raise it again. Each reason is tied to something Aoife said.',
+      note: 'Four applications, started by one tap through case-action. Protection is left on the card for later rather than declined, so Saoirse may raise it again. Each reason is tied to something Aoife said.',
     },
     claim: 'synthetic',
     source: '§6 Stage 6, §49',
@@ -1059,7 +1059,7 @@ export const story: readonly Beat[] = [
     system: {
       reused: REUSED_ROWS,
       events: [`context_reused ×${String(REUSED_ROWS)}`],
-      note: 'One event per requirement per application, written when the applications started. The card groups them by fact, so income reused by three applications is one thing Aoife did not have to say. The status beside it renders from the database, whatever Baz wrote.',
+      note: 'One event per requirement per application, written when the applications started. The card groups them by fact, so income reused by three applications is one thing Aoife did not have to say. The status beside it renders from the database, whatever Saoirse wrote.',
     },
     claim: 'synthetic',
     source: '§6 Stage 7, §53; reuse.json',
@@ -1089,7 +1089,7 @@ export const story: readonly Beat[] = [
         'mortgage.customerType = first_time_buyer',
       ],
       events: ['turn_tools'],
-      note: 'The tool refuses until all four criteria are known, so Baz has to ask rather than quote a range. The server chooses which rows this customer may see and computes every repayment.',
+      note: 'The tool refuses until all four criteria are known, so Saoirse has to ask rather than quote a range. The server chooses which rows this customer may see and computes every repayment.',
     },
     claim: 'synthetic',
     source: '§6 Stage 7, §51; selectRates() over the published rate table',
@@ -1136,7 +1136,7 @@ export const story: readonly Beat[] = [
     system: {
       transitions: ['Personal loan: in_progress → paused (resumes to in_progress)'],
       events: ['application_state_changed'],
-      note: 'The advisory is a deterministic rule: a loan still open beside an active mortgage. Baz may explain it and may not invent it. The customer decides in the card.',
+      note: 'The advisory is a deterministic rule: a loan still open beside an active mortgage. Saoirse may explain it and may not invent it. The customer decides in the card.',
     },
     claim: 'synthetic',
     source: '§6 Stage 8; evaluateAdvisories()',
@@ -1246,7 +1246,7 @@ export const story: readonly Beat[] = [
     stage: 13,
     engineStage: 'applying',
     channel: 'app',
-    title: 'Baz knows exactly what changed',
+    title: 'Saoirse knows exactly what changed',
     lines: [
       {
         actor: 'baz',
@@ -1256,7 +1256,7 @@ export const story: readonly Beat[] = [
     cards: [{ card: STATUS_ON_RETURN }],
     system: {
       events: ['turn_tools'],
-      note: 'The turn runs with a return trigger and the digest carries every event since last_seen_at, each already described in a fixed sentence. Baz phrases the summary; the status card beside it renders from the database.',
+      note: 'The turn runs with a return trigger and the digest carries every event since last_seen_at, each already described in a fixed sentence. Saoirse phrases the summary; the status card beside it renders from the database.',
     },
     claim: 'synthetic',
     source: '§6 Stage 13, §36; describeEvent()',

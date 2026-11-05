@@ -130,10 +130,10 @@
   --code-comment: oklch(0.62 0.02 257);
 
   /*
-   * Baz's own brand, from the supplied dev kit (tokens/brand-tokens.css).
+   * Saoirse's own brand, from the supplied dev kit (tokens/brand-tokens.css).
    *
    * Separate from `--primary` on purpose. `--primary` is the tenant's teal — Demo Bank's
-   * — and Baz is meant to be portable to another one (Invariant 11, §32); a logo that changes
+   * — and Saoirse is meant to be portable to another one (Invariant 11, §32); a logo that changes
    * colour with the bank it is sitting inside is not a logo. The two happen to be within a
    * couple of points of each other today, which is a coincidence and not something to build on.
    */
@@ -346,7 +346,7 @@
 }
 
 /*
- * The Baz mark's idle motion (opening-transition spec §3).
+ * The Saoirse mark's idle motion (opening-transition spec §3).
  *
  * Scale and translate only, so it composites on the GPU and holds sixty frames on a phone.
  * Both stop entirely under reduced motion: the mark is decoration, and nothing it does carries
@@ -373,7 +373,7 @@
   }
 }
 
-/* Baz thinking (opening-transition spec §6): opacity only, never vertical travel. */
+/* Saoirse thinking (opening-transition spec §6): opacity only, never vertical travel. */
 @keyframes baz-typing {
   0%,
   100% {
@@ -399,7 +399,7 @@
  * View transitions, on the same clock as everything else.
  *
  * `baz-avatar` is the opening morph: the mark in the middle of the opening screen becoming the
- * avatar beside Baz's first reply. `baz-wordmark` carries the brand from the landing page into
+ * avatar beside Saoirse's first reply. `baz-wordmark` carries the brand from the landing page into
  * the chat header rather than letting the page swap under it. Both were on the browser's
  * default timing until now, which is a quarter-second linear-ish crossfade that reads as a
  * glitch next to everything else on the page.

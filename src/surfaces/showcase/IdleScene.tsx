@@ -26,7 +26,7 @@ export function IdleScene({ onStart }: { readonly onStart: () => void }): ReactN
       <main className="mx-auto flex w-full max-w-[1600px] flex-1 items-center px-4 py-12 sm:px-6 lg:py-16">
         <div className="grid w-full items-center gap-12 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:gap-20">
           <div>
-            <Eyebrow>Baz / The showcase</Eyebrow>
+            <Eyebrow>Saoirse / The showcase</Eyebrow>
             <h1 className="mt-4 max-w-[16ch] text-[2.75rem] leading-[1.05] font-bold tracking-tight text-balance sm:text-6xl xl:text-7xl">
               What if banking started with a conversation?
             </h1>

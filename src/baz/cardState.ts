@@ -22,11 +22,11 @@ export function settledTransfer(transfer: {
   return transfer.cadence === 'monthly'
     ? {
         label: `${euro(transfer.amount)} a month to ${transfer.toLabel}`,
-        note: 'Set up through Nexus under PSD2. The first one is on its way; Baz will say when it lands.',
+        note: 'Set up through Nexus under PSD2. The first one is on its way; Saoirse will say when it lands.',
       }
     : {
         label: `${euro(transfer.amount)} on its way to ${transfer.toLabel}`,
-        note: 'Instructed through Nexus under PSD2. Baz will say when it lands.',
+        note: 'Instructed through Nexus under PSD2. Saoirse will say when it lands.',
       }
 }
 

@@ -33,7 +33,7 @@ export const NAV: readonly { readonly id: ChapterId; readonly label: string }[] 
 ]
 
 export const hero = {
-  title: 'How Baz works',
+  title: 'How Saoirse works',
   standfirst: 'A conversational banking layer built on top of capabilities the bank already owns.',
 } as const
 
@@ -43,7 +43,7 @@ export const opportunity = {
   body: [
     'Relationship banking has traditionally been reserved for customers whose value justified the cost. Everyone else got a product list and an app.',
     'The gap is not information. The bank publishes everything. The gap is that nobody turns it into a conversation about your life, remembers what you said, and picks it up again a month later.',
-    'Baz is an attempt at that: understand what somebody is actually trying to do, hold on to it, and get it done through the bank’s own machinery rather than around it.',
+    'Saoirse is an attempt at that: understand what somebody is actually trying to do, hold on to it, and get it done through the bank’s own machinery rather than around it.',
   ],
   pillars: [
     {
@@ -65,7 +65,7 @@ export const storyChapter = {
   eyebrow: 'The story',
   title: 'One customer, thirteen stages, the whole case',
   body: [
-    'The acceptance test for this prototype is a story rather than a feature list. A customer comes for a mortgage. Baz works out the life event behind it. The products are chosen, the facts are collected once and used everywhere, the case moves from a browser tab to a phone, a spouse joins from her own phone, a loan is deliberately held, the customer leaves, the bank moves, a notification arrives, and Baz knows exactly what changed.',
+    'The acceptance test for this prototype is a story rather than a feature list. A customer comes for a mortgage. Saoirse works out the life event behind it. The products are chosen, the facts are collected once and used everywhere, the case moves from a browser tab to a phone, a spouse joins from her own phone, a loan is deliberately held, the customer leaves, the bank moves, a notification arrives, and Saoirse knows exactly what changed.',
     'This is that story, told through the cards the product renders. The customer and her words are synthetic and say so. The cards are the real components, the states are the real states, and every figure on them is what the engine produced.',
   ],
   caption:
@@ -107,7 +107,7 @@ export const discovery = {
   body: [
     'The plan was to write a conversational version of each product journey, and keep it in step with the real one by hand. That plan survived until somebody opened the network tab on the SuperSaver page.',
     'The existing journey fetches its own definition from an API: every question, every branch, every validation rule, every consent and the exact shape of the submission. It is a document, and documents can be read by something other than a web page.',
-    'So Baz is not a conversational imitation of a product journey. It is another renderer of the same definition the website renders.',
+    'So Saoirse is not a conversational imitation of a product journey. It is another renderer of the same definition the website renders.',
   ],
   afterExample:
     'The customer does not need to know any of that, and the bank’s own journey stays authoritative underneath.',
@@ -115,7 +115,7 @@ export const discovery = {
 
 export const build = {
   eyebrow: 'The build',
-  title: 'Baz was not designed this way. We found our way here.',
+  title: 'Saoirse was not designed this way. We found our way here.',
   body: [
     'It started as an applications assistant and became something else five times over. Each change is here with what it replaced, because a product that arrived fully formed would be a less honest story and a less useful one.',
   ],

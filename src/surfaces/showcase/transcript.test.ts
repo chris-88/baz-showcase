@@ -12,7 +12,7 @@ const CARD: Card = {
 }
 
 const events: readonly TranscriptEvent[] = [
-  { kind: 'customer', id: 'c1', atMs: 4_000, typeFromMs: 1_500, text: 'Hello there, Baz' },
+  { kind: 'customer', id: 'c1', atMs: 4_000, typeFromMs: 1_500, text: 'Hello there, Saoirse' },
   { kind: 'baz', id: 'b1', atMs: 6_000, thinkingFromMs: 4_000, text: 'Hello.' },
   {
     kind: 'card',
@@ -38,13 +38,13 @@ describe('the visible transcript', () => {
   it('fills the composer as a prefix of the message, then sends it', () => {
     expect(visibleTranscript(events, 1_500).composer.text).toBe('')
     const mid = visibleTranscript(events, 2_750).composer.text
-    expect('Hello there, Baz'.startsWith(mid)).toBe(true)
+    expect('Hello there, Saoirse'.startsWith(mid)).toBe(true)
     expect(mid.length).toBeGreaterThan(0)
     expect(visibleTranscript(events, 3_900).composer.sending).toBe(true)
     const sent = visibleTranscript(events, 4_000)
     expect(sent.composer.text).toBe('')
     expect(sent.entries).toEqual([
-      { kind: 'message', id: 'c1', author: 'customer', text: 'Hello there, Baz' },
+      { kind: 'message', id: 'c1', author: 'customer', text: 'Hello there, Saoirse' },
     ])
   })
 

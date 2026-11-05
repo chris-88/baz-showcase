@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
 /**
- * Baz's icon, from `docs/baz-icon.svg`.
+ * Saoirse's icon, from `docs/baz-icon.svg`.
  *
  * A lowercase `b` — a stem and a ring for its bowl — with two eyes inside the bowl. It is the
  * same letter that opens the wordmark, which is the point: the thing in the middle of the
@@ -29,7 +29,7 @@ export function BazMark({
    */
   readonly breathing?: boolean
   /**
-   * An accessible name. Omitted where visible "Baz" text sits beside it, which is the usual
+   * An accessible name. Omitted where visible "Saoirse" text sits beside it, which is the usual
    * case — a decorative repeat of an adjacent word is noise to a screen reader (spec §16).
    */
   readonly title?: string

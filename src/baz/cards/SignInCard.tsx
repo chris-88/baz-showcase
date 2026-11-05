@@ -44,7 +44,7 @@ export function SignInCard({ card, disabled }: { card: Payload; disabled?: boole
             href={card.whyHref}
             className="text-muted-foreground hover:text-foreground text-xs underline underline-offset-2"
           >
-            What Baz does with your details
+            What Saoirse does with your details
           </a>
         </p>
       </div>

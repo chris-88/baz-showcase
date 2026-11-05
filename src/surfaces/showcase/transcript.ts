@@ -12,7 +12,7 @@ import type { TurnEntry } from '@/baz/cardState'
 export type TranscriptView = {
   /** The entries on screen, in the shape the live conversation uses. */
   readonly entries: readonly TurnEntry[]
-  /** Baz is thinking: the typing bubble sits after the last entry. */
+  /** Saoirse is thinking: the typing bubble sits after the last entry. */
   readonly thinking: boolean
   readonly composer: { readonly text: string; readonly sending: boolean }
   readonly cutaway: CutawayView | null

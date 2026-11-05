@@ -193,7 +193,7 @@ export const adminRequestSchema = z.discriminatedUnion('action', [
    * Plan §3.2 — reword a catalogue entry, or switch it off.
    *
    * Prose only. The conditions that raise a goal are predicates over facts and are not in this
-   * schema at any depth, which is the guarantee: a malformed edit can make Baz read badly and
+   * schema at any depth, which is the guarantee: a malformed edit can make Saoirse read badly and
    * cannot make it behave wrongly. `enabled` is the single exception and it is a boolean.
    *
    * Every prose field is nullable, and null means "use the compiled wording" rather than "blank".
@@ -228,7 +228,7 @@ export const adminRequestSchema = z.discriminatedUnion('action', [
    * §51 — the product catalogue and the mortgage rate table, as rows.
    *
    * Each payload is validated against the compiled file's own shape before it is written, so
-   * what Baz speaks from cannot be malformed, only different. An id that is not in the
+   * what Saoirse speaks from cannot be malformed, only different. An id that is not in the
    * published set is a product or rate the presenter added; "restore" on one of those deletes
    * it, because there is nothing to restore it to.
    */
@@ -685,7 +685,7 @@ export const adminCaseSchema = z.object({
   feedback: z.array(feedbackItemSchema),
   /**
    * What the needs engine makes of this case, and what the bank has committed to watching
-   * for. The presenter can answer "why did Baz offer that" without reading the prompt.
+   * for. The presenter can answer "why did Saoirse offer that" without reading the prompt.
    */
   needs: z.array(
     z.object({
@@ -768,7 +768,7 @@ export const adminCaseSchema = z.object({
       content: z.string(),
       cards: z.array(z.string()),
       at: z.string(),
-      /** Where the turn's time went, on Baz's turns that were measured. */
+      /** Where the turn's time went, on Saoirse's turns that were measured. */
       timing: turnTimingSchema.nullable(),
     }),
   ),

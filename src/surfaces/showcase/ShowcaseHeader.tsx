@@ -49,7 +49,7 @@ export function ShowcaseHeader({
           <Button asChild variant="ghost" size="sm" className="shrink-0 gap-1.5">
             <a href={productUrl.baz}>
               <ArrowLeftIcon className="size-4" />
-              Back to Baz
+              Back to Saoirse
             </a>
           </Button>
         )}
@@ -68,7 +68,7 @@ export function ShowcaseFooter(): ReactNode {
           anybody does in it reaches a bank. The customer in the demonstration is synthetic.
         </p>
         <Button asChild variant="ghost" size="sm">
-          <Link to={routes.howItWorks}>How Baz works</Link>
+          <Link to={routes.howItWorks}>How Saoirse works</Link>
         </Button>
       </div>
     </footer>

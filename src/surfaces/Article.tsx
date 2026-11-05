@@ -25,7 +25,7 @@ export function Article(): ReactNode {
       <header className="bg-background/80 sticky top-0 z-40 border-b backdrop-blur-sm">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
           <div className="flex items-center gap-2.5">
-            <a href={productUrl.landing} aria-label="Baz">
+            <a href={productUrl.landing} aria-label="Saoirse">
               <BazWordmark className="h-5 w-auto" />
             </a>
             <span aria-hidden className="bg-border h-4 w-px" />
@@ -34,7 +34,7 @@ export function Article(): ReactNode {
           <Button asChild variant="ghost" size="sm" className="gap-1.5">
             <a href={productUrl.baz}>
               <ArrowLeftIcon className="size-4" />
-              Back to Baz
+              Back to Saoirse
             </a>
           </Button>
         </div>
@@ -153,7 +153,7 @@ export function Article(): ReactNode {
             </p>
             <Button asChild size="sm" variant="outline" className="mt-4 gap-1.5">
               <Link to={routes.howItWorks}>
-                How Baz works
+                How Saoirse works
                 <ArrowRightIcon className="size-3.5" />
               </Link>
             </Button>

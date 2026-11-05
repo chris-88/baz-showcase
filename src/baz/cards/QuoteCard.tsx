@@ -11,7 +11,7 @@ type Payload = Extract<CardPayload, { type: 'quote' }>
 /**
  * Options to compare, with the trade-off visible (§51).
  *
- * Not a product picker. Choosing one does not start anything — it asks Baz to go through that
+ * Not a product picker. Choosing one does not start anything — it asks Saoirse to go through that
  * option properly and to keep asking how the customer means to use and repay it, which is the
  * part a repayment figure on its own cannot do.
  *

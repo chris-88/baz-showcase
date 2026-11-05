@@ -27,7 +27,7 @@ export function ScriptedComposer({
           className="min-h-6 text-base leading-6 break-words whitespace-pre-wrap sm:text-sm"
         >
           {text.length === 0 ? (
-            <span className="text-muted-foreground">Message Baz</span>
+            <span className="text-muted-foreground">Message Saoirse</span>
           ) : (
             <>
               {text}

@@ -24,7 +24,7 @@ export type ProductChoice = { product: string; catalogueId?: string }
 const identify = (option: Option): string => option.catalogueId ?? option.product
 
 /**
- * §8, §49 — Baz explains why something might fit; the customer chooses.
+ * §8, §49 — Saoirse explains why something might fit; the customer chooses.
  *
  * Nothing is pre-selected and declining is offered beside accepting, because §49 is explicit
  * that discovery must not become cross-selling. Selecting calls `case-action`, which is what
@@ -81,7 +81,7 @@ export function ProductOptionsCard({
      * A card that has committed stays spent.
      *
      * `busy` used to clear on completion, which put a live "Not right now" back on screen while
-     * Baz was still answering the first one. Choosing and declining are decisions, not controls,
+     * Saoirse was still answering the first one. Choosing and declining are decisions, not controls,
      * and the card stays in the transcript afterwards as a record of what was decided. Only a
      * failure gives it back, because then nothing was decided.
      */

@@ -38,7 +38,7 @@ All three are cut from the recognised words, one cue per sentence. Captions star
   above the title. A `body` is allowed and only the closing question uses one. The test in
   `cues.test.ts` enforces the shape and the word limits.
 - `walkthrough.ts`: what happens on the phone, as events in chapter milliseconds. A customer
-  line types from `typeFromMs` and sends at `atMs`; a Baz line thinks from `thinkingFromMs`;
+  line types from `typeFromMs` and sends at `atMs`; a Saoirse line thinks from `thinkingFromMs`;
   a card arrives at `atMs` and settles at `settleAtMs`; a `cut` clears the screen; a `cutaway`
   replaces the phone with a desktop window. `walkthrough.test.ts` checks every card against
   the product's contract and every time against the chapter.

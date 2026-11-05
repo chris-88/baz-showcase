@@ -145,7 +145,7 @@ export const gallery: readonly GalleryEntry[] = [
     id: 'comparison',
     label: 'Comparison',
     oneLine:
-      'Two to four catalogue products side by side. Every word but the reason is read from the knowledge base. Tapping one asks Baz to explain it; nothing is started.',
+      'Two to four catalogue products side by side. Every word but the reason is read from the knowledge base. Tapping one asks Saoirse to explain it; nothing is started.',
     claim: 'poc',
     source: 'rateOf() and the knowledge base, 2026-10-16',
     card: COMPARISON_CARD,
@@ -172,7 +172,7 @@ export const gallery: readonly GalleryEntry[] = [
     id: 'plan_proposal',
     label: 'Plan',
     oneLine:
-      'A goal that outlives any one application, with its milestones and when Baz will come back to it. Every figure is the plan engine’s. Nothing is kept until the tap.',
+      'A goal that outlives any one application, with its milestones and when Saoirse will come back to it. Every figure is the plan engine’s. Nothing is kept until the tap.',
     claim: 'poc',
     source: 'planDraftFor(buy_first_home)',
     card: PLAN_CARD,

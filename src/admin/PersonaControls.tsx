@@ -55,7 +55,7 @@ export function PersonaControls({
     <div className="space-y-6">
       <PageHeader
         title="Persona"
-        description="How Baz speaks. Not what it may discuss, what it can do, or any customer protection."
+        description="How Saoirse speaks. Not what it may discuss, what it can do, or any customer protection."
       />
 
       <Alert>

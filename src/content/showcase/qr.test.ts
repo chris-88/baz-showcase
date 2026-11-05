@@ -5,13 +5,13 @@ import { showcaseConfig } from './config'
 
 describe('QR codes and showcase links', () => {
   it('encodes the showcase site for the article', () => {
-    expect(showcaseConfig.articleUrl).toBe('https://showcase.chrisquinn.ie/#/article')
-    expect(showcaseConfig.articleShort).toBe('showcase.chrisquinn.ie/#/article')
+    expect(showcaseConfig.articleUrl).toBe('https://showcase.saoi.ie/#/article')
+    expect(showcaseConfig.articleShort).toBe('showcase.saoi.ie/#/article')
   })
 
   it('keeps product links on the product', () => {
-    expect(showcaseConfig.liveDemoUrl).toBe('https://baz.chrisquinn.ie/#/baz')
-    expect(showcaseConfig.askUrl).toBe('https://baz.chrisquinn.ie/#/ask')
+    expect(showcaseConfig.liveDemoUrl).toBe('https://app.saoi.ie/#/baz')
+    expect(showcaseConfig.askUrl).toBe('https://app.saoi.ie/#/ask')
   })
 
   it('has regenerated the article QR image (script prints the URL it encodes)', () => {

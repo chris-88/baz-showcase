@@ -75,7 +75,7 @@ export type ConsoleView = Exclude<CutawayView, { kind: 'notification' }>
 export function AdminCutaway({ view }: { readonly view: ConsoleView }): ReactNode {
   if (view.kind === 'payload') {
     return (
-      <DesktopInset address="baz.chrisquinn.ie/#/admin/forms">
+      <DesktopInset address="app.saoi.ie/#/admin/forms">
         <PayloadExcerpt />
       </DesktopInset>
     )
@@ -97,7 +97,7 @@ export function AdminCutaway({ view }: { readonly view: ConsoleView }): ReactNod
           : view.screen
 
   return (
-    <DesktopInset address={`baz.chrisquinn.ie/#/admin/${address}`}>
+    <DesktopInset address={`app.saoi.ie/#/admin/${address}`}>
       <QueryClientProvider client={inert}>
         {/* Inert: a cutaway is a picture of the console, not the console. */}
         <div inert aria-hidden className="flex h-full min-h-0 select-none" style={{ zoom: 0.92 }}>

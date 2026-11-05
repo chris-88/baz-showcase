@@ -42,18 +42,18 @@ export const showcaseConfig = {
       captions: riskVtt,
     },
   } satisfies Readonly<Record<ChapterId, ChapterManifest>>,
-  liveDemoUrl: 'https://baz.chrisquinn.ie/#/baz',
+  liveDemoUrl: 'https://app.saoi.ie/#/baz',
   /** Shown under the QR code, for anybody who would rather type it. */
-  liveDemoShort: 'baz.chrisquinn.ie/#/baz',
+  liveDemoShort: 'app.saoi.ie/#/baz',
   /** Relative, because the article is a route of this site. */
   articleHref: '#/article',
   /** What the article's QR code encodes; `qr.test.ts` checks the two agree. */
-  articleUrl: 'https://showcase.chrisquinn.ie/#/article',
-  articleShort: 'showcase.chrisquinn.ie/#/article',
+  articleUrl: 'https://showcase.saoi.ie/#/article',
+  articleShort: 'showcase.saoi.ie/#/article',
   /** Questions and collaboration, on the visitor's own phone. */
   askHref: '#/ask',
-  askUrl: 'https://baz.chrisquinn.ie/#/ask',
-  askShort: 'baz.chrisquinn.ie/#/ask',
+  askUrl: 'https://app.saoi.ie/#/ask',
+  askShort: 'app.saoi.ie/#/ask',
   examplePrompt:
     'We’ve recently married, had our first baby, and are hoping to buy our first home.',
   /** How long a scene change takes. Short enough never to add up. */

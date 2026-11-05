@@ -4,9 +4,9 @@ Guidance for the development agent working on this project. Read this fully befo
 
 ## What this is
 
-The Baz showcase: a narrated five-minute showcase (`/`), the how-it-works explainer (`/how-it-works/:section?`) and the article (`/article`), served as a static site at `https://showcase.chrisquinn.ie`. It was extracted from the Baz proof of concept (`chris-88/digital-hack`, branch `next`) and has no dependency on the product code or any backend. Baz is a conversational layer over simulated retail banking for a fictional Demo Bank; everything shown is synthetic.
+The Baz showcase: a narrated five-minute showcase (`/`), the how-it-works explainer (`/how-it-works/:section?`) and the article (`/article`), served as a static site at `https://showcase.saoi.ie`. It was extracted from the Baz proof of concept (`chris-88/digital-hack`, branch `next`) and has no dependency on the product code or any backend. Baz is a conversational layer over simulated retail banking for a fictional Demo Bank; everything shown is synthetic.
 
-**Stack:** Vite + React + TypeScript · Tailwind v4 · shadcn/ui components (copied from the POC) · React Router (HashRouter) · Zod (copied card contracts) · Vitest + Testing Library · Playwright smoke test · GitHub Pages via GitHub Actions, custom domain `showcase.chrisquinn.ie` (DNS-only CNAME to `chris-88.github.io`). No Supabase.
+**Stack:** Vite + React + TypeScript · Tailwind v4 · shadcn/ui components (copied from the POC) · React Router (HashRouter) · Zod (copied card contracts) · Vitest + Testing Library · Playwright smoke test · GitHub Pages via GitHub Actions, custom domain `showcase.saoi.ie` (DNS-only CNAME to `chris-88.github.io`). No Supabase.
 
 ## Operating philosophy: lean surface, high floor
 
@@ -41,7 +41,7 @@ If you can't satisfy an item, say so explicitly rather than quietly skipping it.
 
 ## Deployment
 
-GitHub Actions (`.github/workflows/deploy.yml`) runs typecheck, lint, format:check, test and build on every push to `main`, then publishes `dist/` to Pages. `public/CNAME` is `showcase.chrisquinn.ie`. `base` is `/`. HashRouter is required: Pages cannot serve deep links. `main` is deployable; push to `main` deploys.
+GitHub Actions (`.github/workflows/deploy.yml`) runs typecheck, lint, format:check, test and build on every push to `main`, then publishes `dist/` to Pages. `public/CNAME` is `showcase.saoi.ie`. `base` is `/`. HashRouter is required: Pages cannot serve deep links. `main` is deployable; push to `main` deploys.
 
 ## Commands
 

@@ -5,7 +5,7 @@
  * the questions form live in the product at `product`, so links to them are plain absolute
  * links rather than routes of this app.
  */
-const product = 'https://baz.chrisquinn.ie/#'
+const product = 'https://app.saoi.ie/#'
 
 export const routes = {
   /** The narrated showcase: five minutes for a room, started by one click and nothing else. */

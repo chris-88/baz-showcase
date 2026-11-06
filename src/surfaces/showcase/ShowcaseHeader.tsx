@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeftIcon, XIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { BazWordmark } from '@/baz/BazWordmark'
+import { SaoiWordmark } from '@/baz/SaoiWordmark'
 import { productUrl, routes } from '@/app/routes'
 
 /**
@@ -29,7 +29,7 @@ export function ShowcaseHeader({
     <header className="bg-background/80 border-b backdrop-blur-sm">
       <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <div className="flex shrink-0 items-center gap-2.5">
-          <BazWordmark className="h-5 w-auto" />
+          <SaoiWordmark className="h-5 w-auto" />
           <span aria-hidden className="bg-border h-4 w-px" />
           <span className="text-muted-foreground text-sm">Showcase</span>
         </div>

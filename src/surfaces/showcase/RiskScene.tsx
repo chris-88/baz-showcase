@@ -14,7 +14,7 @@ import { showcaseConfig } from '@/content/showcase/config'
 import { ChatBubble } from '@/baz/ChatBubble'
 import { MessageText } from '@/baz/MessageText'
 import { BazMark } from '@/baz/BazMark'
-import { BazWordmark } from '@/baz/BazWordmark'
+import { SaoiWordmark } from '@/baz/SaoiWordmark'
 import { Claim, Surface, Tile } from '@/components/Primitives'
 import { ChapterStage } from './ChapterStage'
 import { Arrive, Arrow, Bus, Node } from './scene-parts'
@@ -125,7 +125,7 @@ function Compress({ p, still }: { readonly p: number; readonly still: boolean })
         style={{ transform: `scale(${String(1 - 0.32 * zoom)})`, transformOrigin: 'center 30%' }}
       >
         <div className="flex items-center gap-2 border-b pb-2">
-          <BazWordmark className="h-4" />
+          <SaoiWordmark className="h-4" />
         </div>
         <div className="space-y-2 py-3 [&_div]:text-[12px] [&_div]:leading-snug">
           <ChatBubble author="customer" showAvatar={false}>

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'
 import { Button } from '@/components/ui/button'
-import { BazWordmark } from '@/baz/BazWordmark'
+import { SaoiWordmark } from '@/baz/SaoiWordmark'
 import { productUrl } from '@/app/routes'
 import { CHAPTERS, type ChapterId } from '@/content/how-it-works/copy'
 import { ChapterBar, ChapterRail } from './how-it-works/ChapterNav'
@@ -70,7 +70,7 @@ export function HowItWorks(): ReactNode {
       <header className="bg-background/80 sticky top-0 z-40 hidden border-b backdrop-blur-sm lg:block">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
           <div className="flex items-center gap-2.5">
-            <BazWordmark className="h-5 w-auto" />
+            <SaoiWordmark className="h-5 w-auto" />
             <span aria-hidden className="bg-border h-4 w-px" />
             <span className="text-muted-foreground text-sm">How it works</span>
           </div>
@@ -88,7 +88,7 @@ export function HowItWorks(): ReactNode {
             only thing pinned and the reading area stays as tall as possible. */}
         <div className="flex items-center justify-between gap-4 py-3 lg:hidden">
           <div className="flex items-center gap-2.5">
-            <BazWordmark className="h-4 w-auto" />
+            <SaoiWordmark className="h-4 w-auto" />
             <span aria-hidden className="bg-border h-3.5 w-px" />
             <span className="text-muted-foreground text-xs">How it works</span>
           </div>

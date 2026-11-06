@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import { MenuIcon } from 'lucide-react'
-import { BazWordmark } from '@/baz/BazWordmark'
+import { SaoiWordmark } from '@/baz/SaoiWordmark'
 
 /** The drawn phone's size before scaling: a 390 by 860 screen inside a 10px bezel. */
 export const PHONE_WIDTH = 410
@@ -79,7 +79,7 @@ export function PhoneFrame({
                   <MenuIcon className="size-5" />
                 </span>
                 <span className="flex justify-center">
-                  <BazWordmark className="h-8" />
+                  <SaoiWordmark className="h-8" />
                 </span>
                 <span />
               </header>

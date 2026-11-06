@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
 /**
- * Saoirse's icon, from `docs/baz-icon.svg`.
+ * Saoirse's icon, from `brand/saoirse-face.svg` in the product repo.
  *
  * A lowercase `b` — a stem and a ring for its bowl — with two eyes inside the bowl. It is the
  * same letter that opens the wordmark, which is the point: the thing in the middle of the

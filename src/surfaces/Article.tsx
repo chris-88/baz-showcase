@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ArrowLeftIcon, ArrowRightIcon, ClockIcon, PlayIcon } from 'lucide-react'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'
 import { Button } from '@/components/ui/button'
-import { BazWordmark } from '@/baz/BazWordmark'
+import { SaoiWordmark } from '@/baz/SaoiWordmark'
 import { Surface } from '@/components/Primitives'
 import { Eyebrow } from '@/surfaces/how-it-works/parts'
 import { productUrl, routes } from '@/app/routes'
@@ -26,7 +26,7 @@ export function Article(): ReactNode {
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
           <div className="flex items-center gap-2.5">
             <a href={productUrl.landing} aria-label="Saoirse">
-              <BazWordmark className="h-5 w-auto" />
+              <SaoiWordmark className="h-5 w-auto" />
             </a>
             <span aria-hidden className="bg-border h-4 w-px" />
             <span className="text-muted-foreground text-sm">Article</span>

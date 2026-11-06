@@ -137,7 +137,7 @@
    * colour with the bank it is sitting inside is not a logo. The two happen to be within a
    * couple of points of each other today, which is a coincidence and not something to build on.
    */
-  --baz-primary: #0029f8;
+  --baz-primary: #00736f;
   --baz-ink: #0f172a;
 
   --border: var(--slate-300);
@@ -174,11 +174,11 @@
   --decides-model: oklch(0.78 0.12 70);
 
   /*
-   * The artwork specifies one blue, for a white ground. Carried onto a dark one unchanged it
+   * The artwork specifies one teal, for a white ground. Carried onto a dark one unchanged it
    * is nearly unreadable, so this is the same hue lifted until it holds — the lightest thing
-   * that is still recognisably that blue rather than a different brand.
+   * that is still recognisably that teal rather than a different brand.
    */
-  --baz-primary: oklch(0.72 0.19 266);
+  --baz-primary: oklch(0.76 0.1 190);
   --baz-ink: oklch(0.97 0.004 286);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.21 0.006 286);

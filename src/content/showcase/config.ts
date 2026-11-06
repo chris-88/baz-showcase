@@ -42,9 +42,9 @@ export const showcaseConfig = {
       captions: riskVtt,
     },
   } satisfies Readonly<Record<ChapterId, ChapterManifest>>,
-  liveDemoUrl: 'https://app.saoi.ie/#/baz',
+  liveDemoUrl: 'https://app.saoi.ie/#/',
   /** Shown under the QR code, for anybody who would rather type it. */
-  liveDemoShort: 'app.saoi.ie/#/baz',
+  liveDemoShort: 'app.saoi.ie/#/',
   /** Relative, because the article is a route of this site. */
   articleHref: '#/article',
   /** What the article's QR code encodes; `qr.test.ts` checks the two agree. */

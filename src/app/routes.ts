@@ -21,7 +21,7 @@ export const routes = {
 /** Pages that belong to the product, not to this site. */
 export const productUrl = {
   landing: `${product}/`,
-  saoi: `${product}/baz`,
+  saoi: `${product}/`,
   privacy: `${product}/privacy`,
   ask: `${product}/ask`,
 } as const

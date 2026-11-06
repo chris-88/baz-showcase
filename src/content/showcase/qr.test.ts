@@ -1,5 +1,5 @@
 import articleSvg from '@/assets/qr/read-article.svg?raw'
-import saoiSvg from '@/assets/qr/open-saoi.svg?raw'
+import appSvg from '@/assets/qr/open-app.svg?raw'
 import { describe, expect, it } from 'vitest'
 import { showcaseConfig } from './config'
 
@@ -10,12 +10,12 @@ describe('QR codes and showcase links', () => {
   })
 
   it('keeps product links on the product', () => {
-    expect(showcaseConfig.liveDemoUrl).toBe('https://app.saoi.ie/#/baz')
+    expect(showcaseConfig.liveDemoUrl).toBe('https://app.saoi.ie/#/')
     expect(showcaseConfig.askUrl).toBe('https://app.saoi.ie/#/ask')
   })
 
   it('has regenerated the article QR image (script prints the URL it encodes)', () => {
     expect(articleSvg).toContain('width="1024" height="1024"')
-    expect(articleSvg).not.toBe(saoiSvg)
+    expect(articleSvg).not.toBe(appSvg)
   })
 })

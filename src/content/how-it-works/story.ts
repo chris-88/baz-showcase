@@ -788,7 +788,7 @@ const STATUS_ON_RETURN: Card = {
 export const NOTIFICATION = {
   title: 'Saoirse',
   body: 'Saoirse has an update about something you’re working on with us. Open Saoirse to pick it up.',
-  link: '/#/baz?n=<single-use code>',
+  link: '/#/?n=<single-use code>',
 } as const
 
 /* ---------------------------------------------------------------------------------------- */

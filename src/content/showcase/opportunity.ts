@@ -3,7 +3,7 @@ import type { OpportunityScene, ShowcaseCue } from './types'
 /**
  * The first sixty seconds: why.
  *
- * Times are where the narrator's words land in `opportunity.mp3` (the 2026-10-29 read, 48.0 s):
+ * Times are where the narrator's words land in `opportunity.mp3` (the 2026-11-06 read, 49.3 s):
  * each cue starts on the first word of its sentence (word timestamps taken from the track, see
  * the README).
  */
@@ -12,7 +12,7 @@ export const OPPORTUNITY_CUES: readonly ShowcaseCue<OpportunityScene>[] = [
     id: 'headline',
     chapter: 'opportunity',
     startMs: 0,
-    endMs: 7_800,
+    endMs: 7_970,
     scene: 'headline',
     presenter: {
       eyebrow: 'The opportunity',
@@ -22,8 +22,8 @@ export const OPPORTUNITY_CUES: readonly ShowcaseCue<OpportunityScene>[] = [
   {
     id: 'fragments',
     chapter: 'opportunity',
-    startMs: 7_800,
-    endMs: 21_840,
+    startMs: 7_970,
+    endMs: 22_470,
     scene: 'fragments',
     presenter: {
       eyebrow: 'Today’s experience',
@@ -33,8 +33,8 @@ export const OPPORTUNITY_CUES: readonly ShowcaseCue<OpportunityScene>[] = [
   {
     id: 'question',
     chapter: 'opportunity',
-    startMs: 21_840,
-    endMs: 25_800,
+    startMs: 22_470,
+    endMs: 26_640,
     scene: 'question',
     presenter: {
       eyebrow: 'A different starting point',
@@ -44,8 +44,8 @@ export const OPPORTUNITY_CUES: readonly ShowcaseCue<OpportunityScene>[] = [
   {
     id: 'meet',
     chapter: 'opportunity',
-    startMs: 25_800,
-    endMs: 36_920,
+    startMs: 26_640,
+    endMs: 37_980,
     scene: 'meet',
     presenter: {
       eyebrow: 'Meet Saoirse',
@@ -55,8 +55,8 @@ export const OPPORTUNITY_CUES: readonly ShowcaseCue<OpportunityScene>[] = [
   {
     id: 'capability',
     chapter: 'opportunity',
-    startMs: 36_920,
-    endMs: 48_000,
+    startMs: 37_980,
+    endMs: 49_280,
     scene: 'capability',
     presenter: {
       eyebrow: 'Built on what exists',

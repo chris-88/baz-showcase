@@ -11,9 +11,10 @@ from the file and the chapter ends when the track ends. Keep `durationTargetMs` 
 in step with the mastered length so the progress rail and cue bounds agree before the file
 has loaded.
 
-The opening (`opportunity.mp3`, 48.0 s, re-read 2026-10-29 with savings as the third
-journey) and closing (`risk.mp3`, 50.6 s) tracks are the mastered narration. `walkthrough.mp3` (174.4 s) is the ElevenLabs read of the savings
-story in `vault/docs/showcase/walkthrough-narration.md`, as spoken on 2026-10-29. Every cue in the three chapters, and every
+The opening (`opportunity.mp3`, 49.3 s) and closing (`risk.mp3`, 51.5 s) tracks are the
+mastered narration. `walkthrough.mp3` (184.0 s) is the ElevenLabs read of the savings
+story in `vault/docs/showcase/walkthrough-narration.md`. All three were re-recorded on
+2026-11-06 with the assistant named Saoirse, and every time value was retimed from them. Every cue in the three chapters, and every
 event in `walkthrough.ts`, sits where its words are spoken: word timestamps were taken off
 each track with a scratch run of faster-whisper (not a project dependency; the narration
 document records how) and the times set from them. A new track means doing that again.

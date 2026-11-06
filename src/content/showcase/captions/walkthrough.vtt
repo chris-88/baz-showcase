@@ -1,213 +1,213 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:00.850
+00:00:00.000 --> 00:00:00.834
 Here it is running.
 
 2
-00:00:01.720 --> 00:00:03.370
+00:00:01.664 --> 00:00:03.464
 The customer types what's going on.
 
 3
-00:00:03.620 --> 00:00:07.790
+00:00:03.818 --> 00:00:07.929
 Married in the spring, a baby, renting, hoping to buy next year.
 
 4
-00:00:08.240 --> 00:00:09.810
+00:00:08.354 --> 00:00:10.038
 Saoirse doesn't reach for a product.
 
 5
-00:00:10.180 --> 00:00:14.550
+00:00:10.418 --> 00:00:14.999
 It asks one question, then records what it learns, where each fact came from.
 
 6
-00:00:14.980 --> 00:00:18.150
+00:00:15.404 --> 00:00:18.522
 Each fact sits in a defined catalogue with its source attached.
 
 7
-00:00:18.820 --> 00:00:21.490
+00:00:19.180 --> 00:00:21.891
 A couple of answers later, it knows the shape of the plan.
 
 8
-00:00:21.920 --> 00:00:27.130
+00:00:22.351 --> 00:00:27.705
 €32,000 saved at AIB, €1,200 a month to put away, a home by next June.
 
 9
-00:00:27.580 --> 00:00:30.830
+00:00:28.192 --> 00:00:31.475
 Saoirse offers to remember it, but nothing is kept until she taps.
 
 10
-00:00:31.340 --> 00:00:34.270
+00:00:31.961 --> 00:00:35.069
 She can review what Saoirse proposes before she approves it.
 
 11
-00:00:34.560 --> 00:00:38.030
+00:00:35.341 --> 00:00:38.730
 The model proposes, the customer commits, the system checks.
 
 12
-00:00:38.680 --> 00:00:41.230
+00:00:39.380 --> 00:00:42.076
 The savings are elsewhere, so Saoirse requests access.
 
 13
-00:00:41.860 --> 00:00:48.550
+00:00:42.682 --> 00:00:49.280
 With her consent, open banking brings in the available account data, salary arriving, rent going out, savings balance.
 
 14
-00:00:49.100 --> 00:00:51.370
+00:00:49.917 --> 00:00:52.159
 The consent has a defined scope and expiry.
 
 15
-00:00:51.840 --> 00:00:54.030
+00:00:52.625 --> 00:00:55.119
 She authorises it and the picture fills in.
 
 16
-00:00:53.880 --> 00:00:57.150
+00:00:54.945 --> 00:00:57.817
 The consent does not authorise a payment or anything else.
 
 17
-00:00:57.580 --> 00:00:58.590
+00:00:57.960 --> 00:00:59.422
 No statement to upload.
 
 18
-00:00:59.120 --> 00:01:00.530
+00:00:59.900 --> 00:01:01.478
 Saoirse reads the permitted data.
 
 19
-00:01:01.020 --> 00:01:02.510
+00:01:01.978 --> 00:01:03.501
 Now the money gets put to work.
 
 20
-00:01:02.880 --> 00:01:04.530
+00:01:03.860 --> 00:01:05.501
 This is arithmetic, not opinion.
 
 21
-00:01:05.000 --> 00:01:08.910
+00:01:05.961 --> 00:01:09.918
 The lump sum goes into a six month fixed term, ending before she needs it.
 
 22
-00:01:09.120 --> 00:01:12.990
-€200 a month into MortgageSaver to qualify for the €2,000 bonus.
+00:01:10.160 --> 00:01:14.420
+€200 a month into mortgage savings account to qualify for the €2,000 bonus.
 
 23
-00:01:13.460 --> 00:01:15.970
-The remainder into SuperSaver at 3%.
+00:01:14.900 --> 00:01:17.750
+The remainder into super savings account at 3%.
 
 24
-00:01:15.820 --> 00:01:19.510
+00:01:17.603 --> 00:01:21.259
 Roughly €430 in the first year at the rates shown.
 
 25
-00:01:19.980 --> 00:01:21.950
+00:01:21.733 --> 00:01:24.109
 One tap starts three account applications.
 
 26
-00:01:22.280 --> 00:01:24.750
+00:01:24.310 --> 00:01:26.264
 The calculation is visible and explainable.
 
 27
-00:01:25.080 --> 00:01:27.050
+00:01:26.452 --> 00:01:29.120
 She already banks here, so she signs in.
 
 28
-00:01:27.340 --> 00:01:30.910
+00:01:29.402 --> 00:01:33.051
 The prototype uses an email code, not the bank's real identity check.
 
 29
-00:01:31.200 --> 00:01:35.870
+00:01:33.328 --> 00:01:38.059
 Existing customer information appears and six fields are reused across three applications.
 
 30
-00:01:36.420 --> 00:01:37.950
+00:01:38.636 --> 00:01:40.096
 Here's the important thing to notice.
 
 31
-00:01:38.400 --> 00:01:42.770
-SuperSaver uses the bank's published form, 499 controls.
+00:01:40.499 --> 00:01:45.361
+The super savings account uses the bank's published form, 499 controls.
 
 32
-00:01:43.300 --> 00:01:48.330
+00:01:45.898 --> 00:01:50.902
 Saoirse reads the definition, fills what it knows, then asks for the rest in the form's own words.
 
 33
-00:01:48.900 --> 00:01:50.870
+00:01:51.471 --> 00:01:53.615
 The €32,000 is still in AIB.
 
 34
-00:01:51.160 --> 00:01:55.570
+00:01:53.975 --> 00:01:58.270
 She separately authorises a transfer and the money moves towards her current account here.
 
 35
-00:01:55.880 --> 00:02:00.710
+00:01:58.580 --> 00:02:03.454
 Now the bank can monitor her deposit directly without relying on continued access to the other account.
 
 36
-00:02:01.140 --> 00:02:03.390
+00:02:03.866 --> 00:02:06.138
 Saoirse will return when it reaches €40,000.
 
 37
-00:02:03.600 --> 00:02:07.190
+00:02:06.328 --> 00:02:09.850
 In the console, the fixed term account is opened and the transfer settled.
 
 38
-00:02:07.620 --> 00:02:09.850
+00:02:10.292 --> 00:02:13.790
 Back on her phone, Saoirse confirms what's happened.
 
 39
-00:02:10.540 --> 00:02:12.590
+00:02:15.704 --> 00:02:17.846
 Now we skip ahead, the months have passed.
 
 40
-00:02:13.160 --> 00:02:17.070
+00:02:18.504 --> 00:02:22.525
 The plan stays in the console, along with the milestone the bank agreed to watch.
 
 41
-00:02:17.660 --> 00:02:19.070
+00:02:23.203 --> 00:02:24.662
 The balance reaches the target.
 
 42
-00:02:18.920 --> 00:02:22.650
+00:02:24.496 --> 00:02:28.500
 A notification lands without exposing financial details.
 
 43
-00:02:23.320 --> 00:02:26.610
+00:02:29.211 --> 00:02:32.895
 She opens it and Saoirse picks up exactly where they left off.
 
 44
-00:02:27.060 --> 00:02:29.930
+00:02:33.410 --> 00:02:36.357
 The deposit is ready and it's time to revisit the mortgage.
 
 45
-00:02:30.540 --> 00:02:32.290
+00:02:37.030 --> 00:02:38.813
 It remembers what she already told it.
 
 46
-00:02:32.620 --> 00:02:33.590
+00:02:39.187 --> 00:02:40.406
 Nothing asked twice.
 
 47
-00:02:34.480 --> 00:02:35.710
+00:02:41.817 --> 00:02:43.035
 And the other side of the glass.
 
 48
-00:02:36.420 --> 00:02:38.750
+00:02:43.705 --> 00:02:46.448
 Every case, every fact and its source.
 
 49
-00:02:39.240 --> 00:02:41.910
+00:02:47.036 --> 00:02:49.928
 Linked accounts, transfers, the monitored balance.
 
 50
-00:02:42.560 --> 00:02:45.070
+00:02:50.641 --> 00:02:53.165
 Guardrails ahead of the model, not inside it.
 
 51
-00:02:45.460 --> 00:02:47.750
+00:02:53.494 --> 00:02:57.344
 Persona controls for style, not policy.
 
 52
-00:02:48.310 --> 00:02:50.330
+00:02:57.555 --> 00:02:59.111
 Analytics built from recorded events.
 
 53
-00:02:51.080 --> 00:02:54.150
+00:03:00.047 --> 00:03:03.780
 Operations and controls, built in from day one.

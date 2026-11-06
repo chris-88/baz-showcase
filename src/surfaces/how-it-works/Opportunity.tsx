@@ -12,7 +12,7 @@ import { opportunity } from '@/content/how-it-works/copy'
 import { scenarios } from '@/content/how-it-works/scenarios'
 import { Claim, Eyebrow, Reveal, Surface, Tile } from './parts'
 import { Button } from '@/components/ui/button'
-import { SaoiWordmark } from '@/baz/SaoiWordmark'
+import { SaoiWordmark } from '@/components/SaoiWordmark'
 import { cn } from '@/lib/utils'
 
 /**
@@ -121,10 +121,10 @@ function ProofCard(): ReactNode {
 
           <div className="flex gap-2.5">
             <span className="bg-muted mt-0.5 grid size-7 shrink-0 place-items-center rounded-full">
-              <SaoiWordmark className="text-baz-primary h-2.5 w-auto" />
+              <SaoiWordmark className="text-saoi-primary h-2.5 w-auto" />
             </span>
             <div className="min-w-0 space-y-2">
-              {scenario.baz.map((line) => (
+              {scenario.saoirse.map((line) => (
                 <p
                   key={line}
                   className="bg-muted w-fit max-w-[94%] rounded-2xl rounded-bl-sm px-3.5 py-2.5 text-[14px] leading-relaxed"

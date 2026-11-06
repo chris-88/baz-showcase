@@ -16,7 +16,7 @@ import {
   type CapabilityGroup,
 } from '@/content/how-it-works/capabilities'
 import { gallery } from '@/content/how-it-works/gallery'
-import { CardRenderer } from '@/baz/cards/CardRenderer'
+import { CardRenderer } from '@/saoirse/cards/CardRenderer'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { cn } from '@/lib/utils'
 import { Claim, Reveal, SectionHead, Surface, Tile } from './parts'

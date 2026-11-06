@@ -8,7 +8,7 @@
           "bank": "aib",
           "displayName": "Current Account",
           "accountType": "current",
-          "iban": "IE87BAZZ00000090742456",
+          "iban": "IE09SAOI00000090742456",
           "openingBalance": 933.37,
           "balance": 4132.77
         },
@@ -17,7 +17,7 @@
           "bank": "aib",
           "displayName": "Savings Account",
           "accountType": "savings",
-          "iban": "IE90BAZZ00000089147334",
+          "iban": "IE12SAOI00000089147334",
           "openingBalance": 32000,
           "balance": 32000
         }
@@ -66,7 +66,7 @@
     }
   ],
   "maskIban": {
-    "IE87BAZZ00000090742456": "IE **** 2456",
-    "IE90BAZZ00000089147334": "IE **** 7334"
+    "IE09SAOI00000090742456": "IE **** 2456",
+    "IE12SAOI00000089147334": "IE **** 7334"
   }
 }

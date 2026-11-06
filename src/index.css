@@ -137,8 +137,8 @@
    * colour with the bank it is sitting inside is not a logo. The two happen to be within a
    * couple of points of each other today, which is a coincidence and not something to build on.
    */
-  --baz-primary: #00736f;
-  --baz-ink: #0f172a;
+  --saoi-primary: #00736f;
+  --saoi-ink: #0f172a;
 
   --border: var(--slate-300);
   --input: var(--slate-300);
@@ -178,8 +178,8 @@
    * is nearly unreadable, so this is the same hue lifted until it holds — the lightest thing
    * that is still recognisably that teal rather than a different brand.
    */
-  --baz-primary: oklch(0.76 0.1 190);
-  --baz-ink: oklch(0.97 0.004 286);
+  --saoi-primary: oklch(0.76 0.1 190);
+  --saoi-ink: oklch(0.97 0.004 286);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.21 0.006 286);
   --popover-foreground: oklch(0.985 0 0);
@@ -292,8 +292,8 @@
   --color-product-protection: var(--product-protection);
   --color-decides-code: var(--decides-code);
   --color-decides-model: var(--decides-model);
-  --color-baz-primary: var(--baz-primary);
-  --color-baz-ink: var(--baz-ink);
+  --color-saoi-primary: var(--saoi-primary);
+  --color-saoi-ink: var(--saoi-ink);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -352,7 +352,7 @@
  * Both stop entirely under reduced motion: the mark is decoration, and nothing it does carries
  * information.
  */
-@keyframes baz-breathe {
+@keyframes saoirse-breathe {
   0%,
   100% {
     transform: scale(1) translateY(0);
@@ -362,19 +362,19 @@
   }
 }
 
-.baz-mark-breathe {
-  animation: baz-breathe 5s ease-in-out infinite;
+.saoirse-mark-breathe {
+  animation: saoirse-breathe 5s ease-in-out infinite;
   transform-origin: center;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .baz-mark-breathe {
+  .saoirse-mark-breathe {
     animation: none;
   }
 }
 
 /* Saoirse thinking (opening-transition spec §6): opacity only, never vertical travel. */
-@keyframes baz-typing {
+@keyframes saoirse-typing {
   0%,
   100% {
     opacity: 0.35;
@@ -384,12 +384,12 @@
   }
 }
 
-.baz-typing-dot {
-  animation: baz-typing 1.1s ease-in-out infinite;
+.saoirse-typing-dot {
+  animation: saoirse-typing 1.1s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .baz-typing-dot {
+  .saoirse-typing-dot {
     animation: none;
     opacity: 0.6;
   }
@@ -398,8 +398,8 @@
 /*
  * View transitions, on the same clock as everything else.
  *
- * `baz-avatar` is the opening morph: the mark in the middle of the opening screen becoming the
- * avatar beside Saoirse's first reply. `baz-wordmark` carries the brand from the landing page into
+ * `saoirse-avatar` is the opening morph: the mark in the middle of the opening screen becoming the
+ * avatar beside Saoirse's first reply. `saoi-wordmark` carries the brand from the landing page into
  * the chat header rather than letting the page swap under it. Both were on the browser's
  * default timing until now, which is a quarter-second linear-ish crossfade that reads as a
  * glitch next to everything else on the page.
@@ -407,16 +407,16 @@
  * `withViewTransition` already skips the API under reduced motion; the router's own
  * transitions do not ask, so the rule at the end stops those too.
  */
-::view-transition-group(baz-avatar),
-::view-transition-group(baz-wordmark) {
+::view-transition-group(saoirse-avatar),
+::view-transition-group(saoi-wordmark) {
   animation-duration: var(--motion-slow);
   animation-timing-function: var(--motion-ease);
 }
 
-::view-transition-old(baz-avatar),
-::view-transition-new(baz-avatar),
-::view-transition-old(baz-wordmark),
-::view-transition-new(baz-wordmark) {
+::view-transition-old(saoirse-avatar),
+::view-transition-new(saoirse-avatar),
+::view-transition-old(saoi-wordmark),
+::view-transition-new(saoi-wordmark) {
   animation-duration: var(--motion-slow);
   animation-timing-function: var(--motion-ease);
   /* The same object, moved. Not two pictures crossfading into one another. */

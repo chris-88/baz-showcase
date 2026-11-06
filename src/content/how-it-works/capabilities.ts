@@ -63,7 +63,7 @@ export const capabilities: readonly Capability[] = [
     title: `${String(MEASURED.cards)} cards, ${String(MEASURED.tools)} tools`,
     body: 'A card is a proposal and the tap is the commitment. The model has no tool that creates, submits, pauses or resumes anything; it draws a card and case-action does the writing after validating the tap.',
     claim: 'poc',
-    source: 'src/baz/cards/CardRenderer.tsx, _shared/llm/tools.ts',
+    source: 'src/saoirse/cards/CardRenderer.tsx, _shared/llm/tools.ts',
   },
   {
     group: 'conversation',
@@ -128,7 +128,7 @@ export const capabilities: readonly Capability[] = [
     title: 'One case, any surface',
     body: 'The same conversation in a browser tab and in the installed app, with sign-in as the bridge. Facts the bank already holds arrive on sign-in and are not asked for again.',
     claim: 'poc',
-    source: '§29, src/baz/useConversation.ts',
+    source: '§29, src/saoirse/useConversation.ts',
   },
   {
     group: 'around',
@@ -156,7 +156,7 @@ export const capabilities: readonly Capability[] = [
     title: 'Installable, with the same address',
     body: 'A PWA. The install offer appears when there is something worth keeping, and the lock-screen notification opens the installed app on the right case.',
     claim: 'poc',
-    source: 'vite-plugin-pwa, src/baz/InstallCard.tsx',
+    source: 'vite-plugin-pwa, src/saoirse/InstallCard.tsx',
   },
   {
     group: 'around',
@@ -228,7 +228,7 @@ export const capabilities: readonly Capability[] = [
     title: 'A conversation that costs nothing to replay',
     body: 'A fixture provider replays a script transcribed from a live case, turn for turn, with no key and no bill, so layout and copy are checked without spending a model call.',
     claim: 'poc',
-    source: 'supabase/functions/baz-turn/fixtures',
+    source: 'supabase/functions/saoi-turn/fixtures',
   },
   {
     group: 'bank',

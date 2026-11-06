@@ -4,8 +4,8 @@ import type { Card as CardPayload } from '@/contracts/cards'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { IconTile } from '@/components/IconTile'
-import { Settling } from '@/baz/cards/Settling'
-import { settledTransfer, type Settled } from '@/baz/cardState'
+import { Settling } from '@/saoirse/cards/Settling'
+import { settledTransfer, type Settled } from '@/saoirse/cardState'
 
 type Payload = Extract<CardPayload, { type: 'transfer' }>
 

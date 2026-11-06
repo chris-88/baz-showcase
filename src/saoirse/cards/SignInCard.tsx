@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { CheckIcon, LockIcon } from 'lucide-react'
 import type { Card as CardPayload } from '@/contracts/cards'
 import { Card } from '@/components/ui/card'
-import { SignInForm } from '@/baz/SignInForm'
+import { SignInForm } from '@/saoirse/SignInForm'
 
 type Payload = Extract<CardPayload, { type: 'sign_in' }>
 

@@ -13,7 +13,7 @@ const CARD: Card = {
 
 const events: readonly TranscriptEvent[] = [
   { kind: 'customer', id: 'c1', atMs: 4_000, typeFromMs: 1_500, text: 'Hello there, Saoirse' },
-  { kind: 'baz', id: 'b1', atMs: 6_000, thinkingFromMs: 4_000, text: 'Hello.' },
+  { kind: 'assistant', id: 'b1', atMs: 6_000, thinkingFromMs: 4_000, text: 'Hello.' },
   {
     kind: 'card',
     id: 'k1',
@@ -23,7 +23,7 @@ const events: readonly TranscriptEvent[] = [
     settled: { label: 'Signed in' },
   },
   { kind: 'cut', id: 'x1', atMs: 10_000 },
-  { kind: 'baz', id: 'b2', atMs: 11_000, thinkingFromMs: 10_000, text: 'Again.' },
+  { kind: 'assistant', id: 'b2', atMs: 11_000, thinkingFromMs: 10_000, text: 'Again.' },
   { kind: 'cutaway', id: 'w1', atMs: 12_000, untilMs: 14_000, view: { kind: 'payload' } },
 ]
 

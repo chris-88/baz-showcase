@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react'
 import { cn } from '@/lib/utils'
-import { BazMark } from '@/baz/BazMark'
-import { CustomerAvatar } from '@/baz/CustomerAvatar'
+import { SaoirseMark } from '@/saoirse/SaoirseMark'
+import { CustomerAvatar } from '@/saoirse/CustomerAvatar'
 
-export type ChatAuthor = 'baz' | 'customer'
+export type ChatAuthor = 'assistant' | 'customer'
 
 /**
  * One turn in the conversation. Saoirse speaks on the left in a light bubble, the customer on the
@@ -23,11 +23,13 @@ export function ChatBubble({
   /** The first Saoirse turn, which is where the opening transition lands. */
   first?: boolean
 }): ReactNode {
-  const isBaz = author === 'baz'
+  const isAssistant = author === 'assistant'
 
   return (
-    <div className={cn('flex w-full items-start gap-2', isBaz ? 'justify-start' : 'justify-end')}>
-      {isBaz &&
+    <div
+      className={cn('flex w-full items-start gap-2', isAssistant ? 'justify-start' : 'justify-end')}
+    >
+      {isAssistant &&
         (showAvatar ? (
           <span
             /*
@@ -37,10 +39,10 @@ export function ChatBubble({
              * on the page, and a transcript of six replies would otherwise declare it six times
              * and the browser would animate none of them.
              */
-            {...(first === true ? { style: { viewTransitionName: 'baz-avatar' } } : {})}
-            className="text-baz-primary size-8 shrink-0 self-start"
+            {...(first === true ? { style: { viewTransitionName: 'saoirse-avatar' } } : {})}
+            className="text-saoi-primary size-8 shrink-0 self-start"
           >
-            <BazMark />
+            <SaoirseMark />
           </span>
         ) : (
           <span className="size-8 shrink-0" />
@@ -49,7 +51,7 @@ export function ChatBubble({
       <div
         className={cn(
           'rounded-chat max-w-[85%] px-3.5 py-2.5 text-sm leading-relaxed',
-          isBaz
+          isAssistant
             ? 'bg-muted text-foreground rounded-bl-sm'
             : 'bg-primary text-primary-foreground rounded-br-sm',
         )}
@@ -57,7 +59,7 @@ export function ChatBubble({
         {children}
       </div>
 
-      {!isBaz &&
+      {!isAssistant &&
         (showAvatar ? (
           <CustomerAvatar className="self-start" />
         ) : (

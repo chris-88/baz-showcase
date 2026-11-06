@@ -11,10 +11,10 @@ import {
 } from 'lucide-react'
 import type { RiskScene as Scene, ShowcaseCue } from '@/content/showcase/types'
 import { showcaseConfig } from '@/content/showcase/config'
-import { ChatBubble } from '@/baz/ChatBubble'
-import { MessageText } from '@/baz/MessageText'
-import { BazMark } from '@/baz/BazMark'
-import { SaoiWordmark } from '@/baz/SaoiWordmark'
+import { ChatBubble } from '@/saoirse/ChatBubble'
+import { MessageText } from '@/saoirse/MessageText'
+import { SaoirseMark } from '@/saoirse/SaoirseMark'
+import { SaoiWordmark } from '@/components/SaoiWordmark'
 import { Claim, Surface, Tile } from '@/components/Primitives'
 import { ChapterStage } from './ChapterStage'
 import { Arrive, Arrow, Bus, Node } from './scene-parts'
@@ -47,7 +47,7 @@ export function RiskScene({
         <div className="flex flex-col items-center text-center">
           <Arrive order={0} still={still}>
             <span className="block size-24 sm:size-32 xl:size-40">
-              <BazMark title="Saoirse" breathing={!still} />
+              <SaoirseMark title="Saoirse" breathing={!still} />
             </span>
           </Arrive>
           <Arrive order={1} still={still}>
@@ -131,7 +131,7 @@ function Compress({ p, still }: { readonly p: number; readonly still: boolean })
           <ChatBubble author="customer" showAvatar={false}>
             {showcaseConfig.examplePrompt}
           </ChatBubble>
-          <ChatBubble author="baz" showAvatar={false}>
+          <ChatBubble author="assistant" showAvatar={false}>
             <MessageText text="Your Advantage Fixed Term Deposit Account is open and the €32,000 from AIB has arrived. When the deposit reaches €40,000 I will come back to you about the mortgage." />
           </ChatBubble>
         </div>
@@ -358,8 +358,8 @@ function Paths({ p, still }: { readonly p: number; readonly still: boolean }): R
         <Arrive order={0} still={still}>
           <Surface lift className="h-full p-5">
             <div className="flex items-center justify-between gap-3">
-              <span className="text-baz-primary size-9">
-                <BazMark />
+              <span className="text-saoi-primary size-9">
+                <SaoirseMark />
               </span>
               <Claim kind="poc" />
             </div>

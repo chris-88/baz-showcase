@@ -35,7 +35,7 @@ export type TurnEntry =
   | {
       readonly kind: 'message'
       readonly id: string
-      readonly author: 'baz' | 'customer'
+      readonly author: 'assistant' | 'customer'
       readonly text: string
       readonly messageId?: string
     }

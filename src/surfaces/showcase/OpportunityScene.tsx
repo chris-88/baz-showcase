@@ -16,10 +16,10 @@ import {
 } from 'lucide-react'
 import type { OpportunityScene as Scene, ShowcaseCue } from '@/content/showcase/types'
 import { showcaseConfig } from '@/content/showcase/config'
-import { ChatBubble } from '@/baz/ChatBubble'
-import { MessageText } from '@/baz/MessageText'
-import { BazMark } from '@/baz/BazMark'
-import { SaoiWordmark } from '@/baz/SaoiWordmark'
+import { ChatBubble } from '@/saoirse/ChatBubble'
+import { MessageText } from '@/saoirse/MessageText'
+import { SaoirseMark } from '@/saoirse/SaoirseMark'
+import { SaoiWordmark } from '@/components/SaoiWordmark'
 import { Surface, Tile } from '@/components/Primitives'
 import { ChapterStage } from './ChapterStage'
 import { Arrive, Arrow, Bus, Chip, JourneyCard, Node } from './scene-parts'
@@ -73,7 +73,7 @@ function Picture({
     case 'question':
       return <OneMessage p={p} still={still} />
     case 'meet':
-      return <MeetBaz p={p} still={still} />
+      return <MeetSaoirse p={p} still={still} />
     case 'capability':
       return <Capabilities p={p} still={still} />
   }
@@ -299,7 +299,7 @@ const VERBS = [
 const NEEDS = ['Mortgage', 'Joint account', 'Savings'] as const
 
 /** Saoirse's name, its three verbs with an arrow between each, and the needs they find. */
-function MeetBaz({ p, still }: { readonly p: number; readonly still: boolean }): ReactNode {
+function MeetSaoirse({ p, still }: { readonly p: number; readonly still: boolean }): ReactNode {
   return (
     <div className="flex w-full max-w-3xl flex-col items-center gap-10">
       <Arrive order={0} still={still}>
@@ -353,8 +353,8 @@ function Capabilities({ p, still }: { readonly p: number; readonly still: boolea
         <Arrive order={0} still={still} className="w-2/3">
           <Surface lift className="flex items-center justify-between gap-4 px-5 py-4">
             <div className="flex items-center gap-3">
-              <span className="text-baz-primary size-8">
-                <BazMark />
+              <span className="text-saoi-primary size-8">
+                <SaoirseMark />
               </span>
               <p className="text-lg font-bold tracking-tight">The conversation</p>
             </div>
@@ -398,7 +398,7 @@ function Capabilities({ p, still }: { readonly p: number; readonly still: boolea
             <ChatBubble author="customer" showAvatar={false}>
               {showcaseConfig.examplePrompt}
             </ChatBubble>
-            <ChatBubble author="baz" showAvatar={false}>
+            <ChatBubble author="assistant" showAvatar={false}>
               <MessageText text="Congratulations. Let’s start with what is going on, not with a product." />
             </ChatBubble>
           </div>

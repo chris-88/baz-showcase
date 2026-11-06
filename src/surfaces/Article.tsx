@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ArrowLeftIcon, ArrowRightIcon, ClockIcon, PlayIcon } from 'lucide-react'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'
 import { Button } from '@/components/ui/button'
-import { SaoiWordmark } from '@/baz/SaoiWordmark'
+import { SaoiWordmark } from '@/components/SaoiWordmark'
 import { Surface } from '@/components/Primitives'
 import { Eyebrow } from '@/surfaces/how-it-works/parts'
 import { productUrl, routes } from '@/app/routes'
@@ -32,7 +32,7 @@ export function Article(): ReactNode {
             <span className="text-muted-foreground text-sm">Article</span>
           </div>
           <Button asChild variant="ghost" size="sm" className="gap-1.5">
-            <a href={productUrl.baz}>
+            <a href={productUrl.saoi}>
               <ArrowLeftIcon className="size-4" />
               Back to Saoirse
             </a>

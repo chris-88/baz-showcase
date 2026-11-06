@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { IconTile } from '@/components/IconTile'
 import { Reveal } from '@/components/Primitives'
-import { Settling } from '@/baz/cards/Settling'
-import type { Settled } from '@/baz/cardState'
+import { Settling } from '@/saoirse/cards/Settling'
+import type { Settled } from '@/saoirse/cardState'
 import { cn } from '@/lib/utils'
 
 type Payload = Extract<CardPayload, { type: 'connect_accounts' }>

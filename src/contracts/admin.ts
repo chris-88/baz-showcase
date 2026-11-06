@@ -764,7 +764,7 @@ export const adminCaseSchema = z.object({
   /** The conversation, oldest first, so a person can read what was actually said. */
   conversation: z.array(
     z.object({
-      role: z.enum(['customer', 'baz', 'system']),
+      role: z.enum(['customer', 'assistant', 'system']),
       content: z.string(),
       cards: z.array(z.string()),
       at: z.string(),

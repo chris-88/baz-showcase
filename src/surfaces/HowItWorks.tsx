@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react'
 import { useDocumentTitle } from '@/lib/useDocumentTitle'
 import { Button } from '@/components/ui/button'
-import { SaoiWordmark } from '@/baz/SaoiWordmark'
+import { SaoiWordmark } from '@/components/SaoiWordmark'
 import { productUrl } from '@/app/routes'
 import { CHAPTERS, type ChapterId } from '@/content/how-it-works/copy'
 import { ChapterBar, ChapterRail } from './how-it-works/ChapterNav'
@@ -75,7 +75,7 @@ export function HowItWorks(): ReactNode {
             <span className="text-muted-foreground text-sm">How it works</span>
           </div>
           <Button asChild variant="ghost" size="sm" className="gap-1.5">
-            <a href={productUrl.baz}>
+            <a href={productUrl.saoi}>
               <ArrowLeftIcon className="size-4" />
               Back to Saoirse
             </a>
@@ -93,7 +93,7 @@ export function HowItWorks(): ReactNode {
             <span className="text-muted-foreground text-xs">How it works</span>
           </div>
           <Button asChild variant="ghost" size="sm" className="h-7 gap-1.5 px-2 text-xs">
-            <a href={productUrl.baz}>
+            <a href={productUrl.saoi}>
               <ArrowLeftIcon className="size-3.5" />
               Back
             </a>
@@ -137,7 +137,7 @@ export function HowItWorks(): ReactNode {
             anybody does in it reaches a bank.
           </p>
           <Button asChild size="sm" className="gap-1.5">
-            <a href={productUrl.baz}>
+            <a href={productUrl.saoi}>
               Try it
               <ArrowRightIcon className="size-4" />
             </a>

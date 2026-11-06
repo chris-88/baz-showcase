@@ -29,7 +29,7 @@ If you can't satisfy an item, say so explicitly rather than quietly skipping it.
 
 - Copy lives in `src/content/**`. Values that used to come from the product's server code are JSON in `src/content/data/`, read through `src/content/data/snapshot.ts`. They were produced once by `scripts/snapshot/` (see its README) and are edited by hand from now on; do not re-run it, the POC has moved on.
 - `src/contracts/` holds copies of the card and admin zod schemas the components are typed against. Treat them as local types.
-- `src/baz/`, `src/admin/` and `src/components/` are presentational copies of product components, rendered inert. Do not add network calls.
+- `src/saoirse/`, `src/admin/` and `src/components/` are presentational copies of product components, rendered inert. Do not add network calls.
 - Links into the product (Back to Saoirse, privacy, ask) are absolute (`productUrl` in `src/app/routes.ts`).
 - Audio is in `src/assets/showcase/` and imported as modules (hashed, never in `public/`).
 

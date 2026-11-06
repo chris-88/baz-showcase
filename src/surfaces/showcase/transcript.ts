@@ -1,5 +1,5 @@
 import type { CutawayView, TranscriptEvent } from '@/content/showcase/types'
-import type { TurnEntry } from '@/baz/cardState'
+import type { TurnEntry } from '@/saoirse/cardState'
 
 /**
  * What the phone shows at a moment in the walkthrough.
@@ -40,8 +40,8 @@ export function visibleTranscript(
       case 'customer':
         entries.push({ kind: 'message', id: event.id, author: 'customer', text: event.text })
         break
-      case 'baz':
-        entries.push({ kind: 'message', id: event.id, author: 'baz', text: event.text })
+      case 'assistant':
+        entries.push({ kind: 'message', id: event.id, author: 'assistant', text: event.text })
         break
       case 'card': {
         const settled =
@@ -59,9 +59,11 @@ export function visibleTranscript(
     }
   }
 
-  const nextBaz = events.find((event) => event.kind === 'baz' && event.atMs > timeMs)
+  const nextAssistant = events.find((event) => event.kind === 'assistant' && event.atMs > timeMs)
   const thinking =
-    nextBaz !== undefined && nextBaz.kind === 'baz' && nextBaz.thinkingFromMs <= timeMs
+    nextAssistant !== undefined &&
+    nextAssistant.kind === 'assistant' &&
+    nextAssistant.thinkingFromMs <= timeMs
 
   const nextCustomer = events.find((event) => event.kind === 'customer' && event.atMs > timeMs)
   let composer = { text: '', sending: false }

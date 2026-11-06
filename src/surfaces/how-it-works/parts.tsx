@@ -178,7 +178,7 @@ export function MiniBubble({
   from,
 }: {
   readonly children: ReactNode
-  readonly from: 'customer' | 'baz'
+  readonly from: 'customer' | 'assistant'
 }): ReactNode {
   return (
     <p

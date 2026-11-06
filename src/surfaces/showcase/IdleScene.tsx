@@ -2,8 +2,8 @@ import type { ReactNode } from 'react'
 import { ClockIcon, HeartIcon, HomeIcon, PlayIcon, ShieldIcon, UsersIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Surface, Tile } from '@/components/Primitives'
-import { ChatBubble } from '@/baz/ChatBubble'
-import { MessageText } from '@/baz/MessageText'
+import { ChatBubble } from '@/saoirse/ChatBubble'
+import { MessageText } from '@/saoirse/MessageText'
 import { Eyebrow } from '@/surfaces/how-it-works/parts'
 import { showcaseConfig } from '@/content/showcase/config'
 import { ShowcaseFooter, ShowcaseHeader } from './ShowcaseHeader'
@@ -63,7 +63,7 @@ function Companion(): ReactNode {
     <Surface lift className="mx-auto w-full max-w-[420px] p-5 sm:p-6">
       <div className="space-y-3">
         <ChatBubble author="customer">{showcaseConfig.examplePrompt}</ChatBubble>
-        <ChatBubble author="baz">
+        <ChatBubble author="assistant">
           <MessageText text="Congratulations. That is a lot at once, and most of it connects. Before we get to products, how are your finances arranged between you at the moment?" />
         </ChatBubble>
       </div>

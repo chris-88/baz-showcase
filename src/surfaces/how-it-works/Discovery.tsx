@@ -459,7 +459,7 @@ function Channels(): ReactNode {
         <div className="grid gap-3 sm:grid-cols-3">
           {channels.renderers.map((renderer, index) => {
             const Icon = icons[index] ?? MessageSquareIcon
-            const isBaz = renderer.status === 'POC'
+            const isSaoi = renderer.status === 'POC'
             return (
               <motion.div
                 key={renderer.name}
@@ -473,16 +473,16 @@ function Channels(): ReactNode {
                     })}
               >
                 <Surface
-                  className={cn('h-full p-4', isBaz && 'border-primary/40 bg-primary/[0.03]')}
+                  className={cn('h-full p-4', isSaoi && 'border-primary/40 bg-primary/[0.03]')}
                 >
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-2.5">
-                      <Tile tone={isBaz ? 'primary' : 'deep'} size="sm">
+                      <Tile tone={isSaoi ? 'primary' : 'deep'} size="sm">
                         <Icon />
                       </Tile>
                       <p className="text-[14px] font-semibold">{renderer.name}</p>
                     </div>
-                    <Claim kind={isBaz ? 'poc' : 'production'} />
+                    <Claim kind={isSaoi ? 'poc' : 'production'} />
                   </div>
                   <p className="text-muted-foreground mt-2.5 text-[12.5px] leading-relaxed">
                     {renderer.detail}

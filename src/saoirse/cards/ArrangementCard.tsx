@@ -4,7 +4,7 @@ import type { Card as CardPayload } from '@/contracts/cards'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { IconTile } from '@/components/IconTile'
-import type { ProductChoice } from '@/baz/cards/ProductOptionsCard'
+import type { ProductChoice } from '@/saoirse/cards/ProductOptionsCard'
 
 type Payload = Extract<CardPayload, { type: 'arrangement' }>
 

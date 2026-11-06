@@ -1,10 +1,10 @@
 {
-  "name": "baz-showcase",
+  "name": "saoi-showcase",
   "private": true,
   "version": "0.0.0",
   "license": "AGPL-3.0-only",
   "type": "module",
-  "description": "The Baz showcase, how-it-works explainer and article, extracted from the Baz POC as a standalone static site",
+  "description": "The Saoi showcase, how-it-works explainer and article, extracted from the Saoi POC as a standalone static site",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

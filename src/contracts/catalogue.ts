@@ -41,7 +41,7 @@ export const knowledgeProductSchema = z.object({
   application_channels: lines,
   advice_model: z.string().trim().max(60),
   related_products: lines,
-  baz_usage: z.object({
+  saoi_usage: z.object({
     surface_when: lines.optional(),
     clarify: lines.optional(),
     must_not_say: lines.optional(),

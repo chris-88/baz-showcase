@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react'
 import { CheckIcon, LinkIcon } from 'lucide-react'
 import type { Beat, Line } from '@/content/how-it-works/story'
-import { ChatBubble } from '@/baz/ChatBubble'
-import { MessageText } from '@/baz/MessageText'
-import { BazMark } from '@/baz/BazMark'
-import { CardRenderer } from '@/baz/cards/CardRenderer'
+import { ChatBubble } from '@/saoirse/ChatBubble'
+import { MessageText } from '@/saoirse/MessageText'
+import { SaoirseMark } from '@/saoirse/SaoirseMark'
+import { CardRenderer } from '@/saoirse/cards/CardRenderer'
 import { Claim, MiniRow, StepBadge, Surface } from './parts'
 import { SystemStrip } from './SystemStrip'
 
@@ -67,16 +67,16 @@ export function StoryBeat({ beat, n }: { readonly beat: Beat; readonly n: number
 }
 
 function Bubble({ line }: { readonly line: Line }): ReactNode {
-  const author = line.actor === 'baz' ? 'baz' : 'customer'
+  const author = line.actor === 'assistant' ? 'assistant' : 'customer'
   return (
     <div>
       <ChatBubble author={author}>
-        {author === 'baz' ? <MessageText text={line.text} /> : line.text}
+        {author === 'assistant' ? <MessageText text={line.text} /> : line.text}
       </ChatBubble>
       {line.quoted !== undefined && (
         <p
           className={
-            author === 'baz'
+            author === 'assistant'
               ? 'text-muted-foreground mt-1 pl-10 text-[10.5px]'
               : 'text-muted-foreground mt-1 pr-10 text-right text-[10.5px]'
           }
@@ -139,8 +139,8 @@ function LockScreen({
   return (
     <div className="space-y-2">
       <div className="bg-card flex items-start gap-3 rounded-2xl border p-3 shadow-xs">
-        <span className="text-baz-primary bg-muted grid size-9 shrink-0 place-items-center rounded-xl">
-          <BazMark />
+        <span className="text-saoi-primary bg-muted grid size-9 shrink-0 place-items-center rounded-xl">
+          <SaoirseMark />
         </span>
         <div className="min-w-0">
           <p className="text-[13px] font-semibold">{notification.title}</p>

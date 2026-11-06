@@ -1,8 +1,8 @@
 import { useEffect, useRef, type ReactNode } from 'react'
-import { ChatBubble } from '@/baz/ChatBubble'
-import { MessageText } from '@/baz/MessageText'
-import { TypingBubble } from '@/baz/TypingBubble'
-import { CardRenderer } from '@/baz/cards/CardRenderer'
+import { ChatBubble } from '@/saoirse/ChatBubble'
+import { MessageText } from '@/saoirse/MessageText'
+import { TypingBubble } from '@/saoirse/TypingBubble'
+import { CardRenderer } from '@/saoirse/cards/CardRenderer'
 import { Reveal } from '@/components/Primitives'
 import type { TranscriptView } from './transcript'
 import { ScriptedComposer } from './ScriptedComposer'
@@ -50,8 +50,8 @@ export function ShowcaseTranscript({
     element.scrollTo({ top: target, behavior: still ? 'auto' : 'smooth' })
   }, [view.revision, still])
 
-  const firstBaz = view.entries.findIndex(
-    (entry) => entry.kind === 'message' && entry.author === 'baz',
+  const firstAssistant = view.entries.findIndex(
+    (entry) => entry.kind === 'message' && entry.author === 'assistant',
   )
 
   return (
@@ -83,8 +83,8 @@ export function ShowcaseTranscript({
             next === undefined || next.kind !== 'message' || next.author !== entry.author
 
           const bubble = (
-            <ChatBubble author={entry.author} showAvatar={endsRun} first={index === firstBaz}>
-              {entry.author === 'baz' ? <MessageText text={entry.text} /> : entry.text}
+            <ChatBubble author={entry.author} showAvatar={endsRun} first={index === firstAssistant}>
+              {entry.author === 'assistant' ? <MessageText text={entry.text} /> : entry.text}
             </ChatBubble>
           )
           return still ? (
@@ -96,7 +96,7 @@ export function ShowcaseTranscript({
           )
         })}
 
-        {view.thinking && <TypingBubble first={firstBaz < 0} />}
+        {view.thinking && <TypingBubble first={firstAssistant < 0} />}
       </div>
 
       <ScriptedComposer text={view.composer.text} sending={view.composer.sending} still={still} />

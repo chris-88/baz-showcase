@@ -117,7 +117,7 @@ export const boundary = {
  *
  * Chosen because it shows the shape of the architecture in nine lines: classify first, load
  * controlled context, then hand the model a bounded set of tools. Not real source, but a
- * faithful reduction of `baz-turn`.
+ * faithful reduction of `saoi-turn`.
  */
 export const codeSample = `const decision = await gate(message, previousTurn)
 
@@ -127,7 +127,7 @@ if (decision.category !== 'banking' && decision.category !== 'ambiguous') {
 
 const context = await loadCase(caseId)   // facts, applications, what is outstanding
 
-return baz.respond({
+return saoirse.respond({
   message,
   digest: buildDigest(context),     // controlled data, not free text
   tools: toolsFor(context),         // it can only do what it is handed

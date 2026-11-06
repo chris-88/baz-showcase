@@ -105,7 +105,7 @@ export type TranscriptEvent =
       readonly typeFromMs: number
     }
   | {
-      readonly kind: 'baz'
+      readonly kind: 'assistant'
       readonly id: string
       readonly atMs: number
       readonly text: string

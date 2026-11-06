@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRightIcon, RotateCcwIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { showcaseConfig } from '@/content/showcase/config'
-import openBazCode from '@/assets/qr/open-baz.svg'
+import openSaoiCode from '@/assets/qr/open-saoi.svg'
 import readArticleCode from '@/assets/qr/read-article.svg'
 import askCode from '@/assets/qr/ask.svg'
 import { ShowcaseFooter, ShowcaseHeader } from './ShowcaseHeader'
@@ -54,7 +54,7 @@ export function ExploreScene({ onRestart }: { readonly onRestart: () => void }):
           <ol className="mx-auto mt-12 grid w-full max-w-[1240px] gap-10 md:grid-cols-3 md:gap-8 lg:mt-14">
             <Destination
               number="01"
-              code={openBazCode}
+              code={openSaoiCode}
               codeAlt="QR code linking to the live Saoirse demonstration"
               address={showcaseConfig.liveDemoShort}
               title="Try Saoirse"

@@ -1,5 +1,5 @@
 import articleSvg from '@/assets/qr/read-article.svg?raw'
-import bazSvg from '@/assets/qr/open-baz.svg?raw'
+import saoiSvg from '@/assets/qr/open-saoi.svg?raw'
 import { describe, expect, it } from 'vitest'
 import { showcaseConfig } from './config'
 
@@ -16,6 +16,6 @@ describe('QR codes and showcase links', () => {
 
   it('has regenerated the article QR image (script prints the URL it encodes)', () => {
     expect(articleSvg).toContain('width="1024" height="1024"')
-    expect(articleSvg).not.toBe(bazSvg)
+    expect(articleSvg).not.toBe(saoiSvg)
   })
 })

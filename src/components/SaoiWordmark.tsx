@@ -28,7 +28,7 @@ export function SaoiWordmark({
       fill="none"
       role="img"
       aria-label="Saoi"
-      className={cn('text-baz-primary h-7 w-auto', className)}
+      className={cn('text-saoi-primary h-7 w-auto', className)}
       {...(transitionName === undefined ? {} : { style: { viewTransitionName: transitionName } })}
     >
       <defs>

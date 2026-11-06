@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { BazMark } from '@/baz/BazMark'
+import { SaoirseMark } from '@/saoirse/SaoirseMark'
 
 /**
  * The customer's lock screen, the moment the push lands.
@@ -19,9 +19,9 @@ export function LockScreen(): ReactNode {
 
       <div className="mt-10 rounded-2xl bg-white/85 p-3.5 text-[#111] shadow-xl backdrop-blur-md">
         <div className="flex items-start gap-3">
-          <span className="bg-baz-primary grid size-10 shrink-0 place-items-center rounded-xl text-white">
+          <span className="bg-saoi-primary grid size-10 shrink-0 place-items-center rounded-xl text-white">
             <span className="size-6">
-              <BazMark />
+              <SaoirseMark />
             </span>
           </span>
           <div className="min-w-0 flex-1">

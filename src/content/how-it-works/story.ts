@@ -12,7 +12,7 @@ import {
   type Product,
   type Stage,
 } from '@/content/data/snapshot'
-import type { Settled } from '@/baz/cardState'
+import type { Settled } from '@/saoirse/cardState'
 
 /**
  * The §67 acceptance story, as a script.
@@ -35,7 +35,7 @@ import type { Settled } from '@/baz/cardState'
  */
 
 export type Channel = 'web' | 'app' | 'partner' | 'lockscreen' | 'console'
-export type Actor = 'aoife' | 'baz' | 'emma'
+export type Actor = 'aoife' | 'assistant' | 'emma'
 export type SpecStage = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13
 
 export type Line = {
@@ -803,7 +803,7 @@ export const story: readonly Beat[] = [
     title: 'One question, and nothing to press',
     lines: [
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'What are you trying to do?',
         quoted: 'the opening screen, ZeroState.tsx',
       },
@@ -825,7 +825,7 @@ export const story: readonly Beat[] = [
     lines: [
       { actor: 'aoife', text: 'My wife and I want to buy our first home next year.' },
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: "First home with your wife, that's a good one to be planning. Over the next year it's a deposit, a mortgage, protection and a few costs nobody warns you about. Do you want help putting a plan together for all of it, or is there one specific thing you want to sort today?",
         quoted: OPENING_FIXTURE,
       },
@@ -852,7 +852,7 @@ export const story: readonly Beat[] = [
     lines: [
       { actor: 'aoife', text: "Yeah I'd like to get a plan together." },
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: "Good, we'll build it properly. How much have you two saved so far, and roughly how much could you put away each month from here?",
         quoted: OPENING_FIXTURE,
       },
@@ -878,7 +878,7 @@ export const story: readonly Beat[] = [
         text: 'We got married in May and had a baby in June, so it is all happening at once. We have €32,000 put by and we can save about €1,200 a month. I am on 92k and Emma is on about 58.',
       },
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'Congratulations, twice over. Two things shape the plan from here: would you want the mortgage with us, and do you and Emma bank together at the moment?',
       },
     ],
@@ -912,7 +912,7 @@ export const story: readonly Beat[] = [
         text: 'Yes, the mortgage here, and we should probably bank together. We are hoping to buy by next June.',
       },
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'Then here is the shape of it. The deposit comes first, the mortgage and the protection sit behind it, and a joint account makes the saving easier to see.',
       },
     ],
@@ -947,7 +947,7 @@ export const story: readonly Beat[] = [
         text: 'I was here before, actually. I bank with you already, so can you use what you have on me?',
       },
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'I can, once you sign in. Everything we have done so far comes with you, on this phone or any other.',
       },
     ],
@@ -975,11 +975,14 @@ export const story: readonly Beat[] = [
     title: 'What the bank already knew',
     lines: [
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'Signed in, so I have what the bank holds: your name, address, PPS number, employer and salary. One thing to check: it still has you down as single.',
       },
       { actor: 'aoife', text: 'Married since May, as I said.' },
-      { actor: 'baz', text: 'Then your word wins over the old record, and both stay on file.' },
+      {
+        actor: 'assistant',
+        text: 'Then your word wins over the old record, and both stay on file.',
+      },
     ],
     cards: [],
     system: {
@@ -1001,7 +1004,7 @@ export const story: readonly Beat[] = [
     title: 'The money, arranged before the menu',
     lines: [
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'Before the accounts, the split. The lump sum goes where it earns most and still comes back in time, €200 a month is exactly what the bonus costs, and the rest goes where the rate is best.',
       },
     ],
@@ -1022,7 +1025,7 @@ export const story: readonly Beat[] = [
     lines: [
       { actor: 'aoife', text: 'Show me the rest first.' },
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'These are what a first home with a new baby usually involves. Tick the ones you want to start; nothing begins until you do.',
       },
     ],
@@ -1050,7 +1053,7 @@ export const story: readonly Beat[] = [
     title: 'Collected once, used four times',
     lines: [
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'Both are started, and the first thing either needs is a few personal details. I already have your email from signing in, so that is one thing I will not ask for.',
         quoted: REUSE_FIXTURE,
       },
@@ -1076,7 +1079,7 @@ export const story: readonly Beat[] = [
         text: 'The house is about €400,000, so we would be borrowing around €360,000. It is a B rating, and we would want it over 30 years.',
       },
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'Those are the four things the published table is indexed by, so here is what it says for you.',
       },
     ],
@@ -1102,7 +1105,7 @@ export const story: readonly Beat[] = [
     title: 'Nothing is submitted silently',
     lines: [
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'The credit card has everything it needs, all of it from what the bank already held. Check it over; the tap is what sends it.',
       },
     ],
@@ -1126,7 +1129,9 @@ export const story: readonly Beat[] = [
     engineStage: 'applying',
     channel: 'app',
     title: 'The loan is deliberately held',
-    lines: [{ actor: 'baz', text: 'Before the loan goes any further, one thing you should know.' }],
+    lines: [
+      { actor: 'assistant', text: 'Before the loan goes any further, one thing you should know.' },
+    ],
     cards: [
       {
         card: PAUSE_CARD,
@@ -1149,7 +1154,7 @@ export const story: readonly Beat[] = [
     title: 'Emma is needed on two of these',
     lines: [
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'The mortgage and the joint account both need Emma. Send her this link and she can do her part from her own phone, whenever suits.',
       },
     ],
@@ -1198,7 +1203,7 @@ export const story: readonly Beat[] = [
     lines: [
       { actor: 'aoife', text: 'That is enough for today.' },
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'Everything is saved where it is. If something moves while you are away, I can let you know.',
       },
     ],
@@ -1249,7 +1254,7 @@ export const story: readonly Beat[] = [
     title: 'Saoirse knows exactly what changed',
     lines: [
       {
-        actor: 'baz',
+        actor: 'assistant',
         text: 'Welcome back, Aoife. Since you were last here:\n- Credit card was approved.\n- Emma finished her part of the mortgage and the joint account.\nThe joint account only needs your tap on the terms now, and the mortgage is waiting on your payslip and photo ID.',
       },
     ],

@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Checkbox } from '@/components/ui/checkbox'
 import { ProductIcon } from '@/components/ProductIcon'
-import { Settling } from '@/baz/cards/Settling'
-import type { Settled } from '@/baz/cardState'
+import { Settling } from '@/saoirse/cards/Settling'
+import type { Settled } from '@/saoirse/cardState'
 import { cn } from '@/lib/utils'
 
 type Payload = Extract<CardPayload, { type: 'product_options' }>

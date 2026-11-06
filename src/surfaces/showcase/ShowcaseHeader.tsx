@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeftIcon, XIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { SaoiWordmark } from '@/baz/SaoiWordmark'
+import { SaoiWordmark } from '@/components/SaoiWordmark'
 import { productUrl, routes } from '@/app/routes'
 
 /**
@@ -47,7 +47,7 @@ export function ShowcaseHeader({
           </Button>
         ) : (
           <Button asChild variant="ghost" size="sm" className="shrink-0 gap-1.5">
-            <a href={productUrl.baz}>
+            <a href={productUrl.saoi}>
               <ArrowLeftIcon className="size-4" />
               Back to Saoirse
             </a>

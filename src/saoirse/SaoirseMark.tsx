@@ -15,7 +15,7 @@ import { cn } from '@/lib/utils'
  * Not square — 64 by 72, because the stem rises above the bowl. `preserveAspectRatio` keeps it
  * honest inside a square slot rather than stretching the ring into an oval.
  */
-export function BazMark({
+export function SaoirseMark({
   className,
   breathing = false,
   title,
@@ -39,7 +39,7 @@ export function BazMark({
   return (
     <svg
       viewBox="0 0 64 72"
-      className={cn('size-full', breathing && 'baz-mark-breathe', className)}
+      className={cn('size-full', breathing && 'saoirse-mark-breathe', className)}
       {...(labelled
         ? { role: 'img' as const, 'aria-label': title }
         : { 'aria-hidden': true as const })}

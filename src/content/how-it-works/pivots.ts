@@ -18,7 +18,7 @@ export type Mini =
   | { readonly kind: 'tiles'; readonly items: readonly string[] }
   | {
       readonly kind: 'chat'
-      readonly lines: readonly { readonly from: 'customer' | 'baz'; readonly text: string }[]
+      readonly lines: readonly { readonly from: 'customer' | 'assistant'; readonly text: string }[]
     }
   | {
       readonly kind: 'goal'
@@ -63,7 +63,7 @@ export const pivots: readonly Pivot[] = [
     before: { kind: 'tiles', items: ['Mortgage', 'Personal loan', 'Savings', 'Credit card'] },
     after: {
       kind: 'chat',
-      lines: [{ from: 'baz', text: 'What are you trying to do?' }],
+      lines: [{ from: 'assistant', text: 'What are you trying to do?' }],
     },
     beforeCaption: 'A menu of products, and a customer expected to know which one they are',
     afterCaption: 'One question that does not assume they do',
@@ -99,7 +99,7 @@ export const pivots: readonly Pivot[] = [
       kind: 'chat',
       lines: [
         { from: 'customer', text: 'Can I afford a house next year?' },
-        { from: 'baz', text: 'Let us work it out. What are you earning?' },
+        { from: 'assistant', text: 'Let us work it out. What are you earning?' },
       ],
     },
     beforeCaption: 'Six surfaces, each a place for the screen and the conversation to disagree',

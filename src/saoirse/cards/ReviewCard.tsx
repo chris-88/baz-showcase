@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { IconTile } from '@/components/IconTile'
-import { ConfirmationCard } from '@/baz/cards/ConfirmationCard'
+import { ConfirmationCard } from '@/saoirse/cards/ConfirmationCard'
 
 type Payload = Extract<CardPayload, { type: 'review' }>
 

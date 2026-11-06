@@ -1,4 +1,4 @@
-# baz-showcase
+# saoi-showcase
 
 The Saoirse showcase, the how-it-works explainer and the article, as a standalone static site. Extracted from the Saoirse proof of concept (`chris-88/digital-hack`, branch `next`); it has no dependency on the product code.
 

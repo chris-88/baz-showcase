@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { AnimatePresence, m } from 'motion/react'
-import { SettledCard } from '@/baz/cards/SettledCard'
-import type { Settled } from '@/baz/cardState'
+import { SettledCard } from '@/saoirse/cards/SettledCard'
+import type { Settled } from '@/saoirse/cardState'
 import { fade, useStill } from '@/lib/motion'
 
 /**

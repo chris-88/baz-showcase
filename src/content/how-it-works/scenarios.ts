@@ -15,7 +15,7 @@ export type Scenario = {
   readonly id: 'home' | 'cash' | 'difficulty'
   readonly label: string
   readonly customer: string
-  readonly baz: readonly string[]
+  readonly saoirse: readonly string[]
   /** What the gate decided, in its own vocabulary. */
   readonly gate: {
     readonly category: string
@@ -41,7 +41,7 @@ export const scenarios: readonly Scenario[] = [
     id: 'home',
     label: 'Buying a first home',
     customer: 'My wife and I want to buy our first home next year.',
-    baz: [
+    saoirse: [
       'That is a good thing to start early. Buying together changes what you can borrow and what you need saved, so it is worth getting the shape of it right first.',
       'Roughly what are you earning between you, and how much have you put aside so far?',
     ],
@@ -70,7 +70,7 @@ export const scenarios: readonly Scenario[] = [
     id: 'cash',
     label: 'A lump sum arrives',
     customer: 'I have come into about €50,000. What should I do with it?',
-    baz: [
+    saoirse: [
       'It depends on what it is for and when you might need it. Money you want untouched for a year behaves very differently from money you might need next month.',
       'Is there anything you are already saving towards, or is this money without a job yet?',
     ],
@@ -98,7 +98,7 @@ export const scenarios: readonly Scenario[] = [
     id: 'difficulty',
     label: 'Struggling to keep up',
     customer: 'I am behind on the mortgage and I do not know what to do.',
-    baz: [
+    saoirse: [
       'Thank you for telling me. Being behind is more common than people think and there are real options, so let us take it one step at a time.',
       'The important thing is to talk to the team who can actually change the arrangement. I can put you through to them now.',
     ],

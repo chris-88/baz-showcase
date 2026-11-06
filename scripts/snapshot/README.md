@@ -1,6 +1,6 @@
 # Snapshot script
 
-Run once against the Baz POC at commit `094e559908734dfc897d276901b0302460bba382` (`origin/next` of `digital-hack`); it is not wired into the build and the POC is not a dependency.
+Run once against the Saoi POC at commit `094e559908734dfc897d276901b0302460bba382` (`origin/next` of `digital-hack`); it is not wired into the build and the POC is not a dependency.
 
 ```bash
 git -C <digital-hack> archive origin/next | tar -x -C /tmp/poc

@@ -305,7 +305,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     text: showcaseConfig.examplePrompt,
   },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-open',
     thinkingFromMs: 2_700,
     atMs: 4_300,
@@ -320,7 +320,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     text: 'Still separate, mostly. We have €32,000 put by in a savings account with AIB, and we can save about €1,200 a month. I’m on 92k and Emma is on about 58.',
   },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-finances',
     thinkingFromMs: 10_300,
     atMs: 11_600,
@@ -336,7 +336,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
 
   /* understand: 22–47 s */
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-shape',
     thinkingFromMs: 14_400,
     atMs: 20_900,
@@ -354,7 +354,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     },
   },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-kept',
     thinkingFromMs: 30_800,
     atMs: 32_000,
@@ -364,7 +364,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
   /* link: 47–77 s */
   { kind: 'cut', id: 'x-link', atMs: 38_700 },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-link',
     thinkingFromMs: 38_700,
     atMs: 40_300,
@@ -382,7 +382,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     },
   },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-seen',
     thinkingFromMs: 52_300,
     atMs: 53_300,
@@ -393,7 +393,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
   /* arrange: 77–105 s */
   { kind: 'cut', id: 'x-arrange', atMs: 61_000 },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-arrange',
     thinkingFromMs: 61_000,
     atMs: 62_500,
@@ -408,7 +408,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     settled: ARRANGEMENT_SETTLED,
   },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-started',
     thinkingFromMs: 80_700,
     atMs: 82_300,
@@ -429,7 +429,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     },
   },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-held',
     thinkingFromMs: 91_200,
     atMs: 91_800,
@@ -438,7 +438,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
   { kind: 'card', id: 'k-reuse', atMs: 93_000, card: SHOWCASE_REUSE_CARD },
   { kind: 'cut', id: 'x-form', atMs: 96_400 },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-form',
     thinkingFromMs: 96_400,
     atMs: 97_800,
@@ -456,7 +456,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
   /* move: 135–168 s */
   { kind: 'cut', id: 'x-move', atMs: 108_900 },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-move',
     thinkingFromMs: 108_900,
     atMs: 109_800,
@@ -482,7 +482,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     view: { kind: 'admin', screen: 'act' },
   },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-opened',
     thinkingFromMs: 127_600,
     atMs: 128_300,
@@ -507,7 +507,7 @@ export const WALKTHROUGH_EVENTS: readonly TranscriptEvent[] = [
     view: { kind: 'notification' },
   },
   {
-    kind: 'baz',
+    kind: 'assistant',
     id: 'b-back',
     thinkingFromMs: 143_300,
     atMs: 144_000,

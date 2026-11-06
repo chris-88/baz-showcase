@@ -5,7 +5,7 @@ import { BracesIcon, MessageSquareIcon } from 'lucide-react'
 import { experience } from '@/content/how-it-works/copy'
 import { scenarios } from '@/content/how-it-works/scenarios'
 import { Claim, Reveal, SectionHead, Surface, Tile } from './parts'
-import { SaoiWordmark } from '@/components/SaoiWordmark'
+import { SaoirseMark } from '@/saoirse/SaoirseMark'
 import { cn } from '@/lib/utils'
 
 /**
@@ -95,7 +95,7 @@ export function Experience(): ReactNode {
               </p>
               <div className="flex gap-2.5">
                 <span className="bg-muted mt-0.5 grid size-7 shrink-0 place-items-center rounded-full">
-                  <SaoiWordmark className="text-saoi-primary h-2.5 w-auto" />
+                  <SaoirseMark className="text-saoi-primary h-4 w-auto" />
                 </span>
                 <div className="min-w-0 space-y-2">
                   {scenario.saoirse.map((line) => (

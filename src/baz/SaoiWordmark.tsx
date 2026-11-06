@@ -65,8 +65,8 @@ export function SaoiWordmark({
         d="M46.0868 26C48.2959 29.8263 53.1887 31.1373 57.015 28.9282C60.8414 26.7191 62.1524 21.8263 59.9432 18L53.015 22L46.0868 26ZM53.015 22L59.9432 18C60.6226 19.1767 58.3113 13.4918 54.2689 9.64335C49.6199 5.21746 42.5135 2 32.015 2L32.015 10L32.015 18C39.0165 18 41.9771 20.0325 43.2366 21.2317C45.1027 23.0082 44.5414 23.3233 46.0868 26L53.015 22Z"
         fill="currentColor"
       />
-      <rect x="31.5" y="50" width="1" height="16" fill="currentColor" />
-      <rect x="31.5" y="2" width="1" height="16" fill="currentColor" />
+      <rect x="30" y="50" width="4" height="16" fill="currentColor" />
+      <rect x="30" y="2" width="4" height="16" fill="currentColor" />
       <circle cx="112" cy="35" r="24.5" stroke="currentColor" strokeWidth="15" />
       <path
         d="M144 59.5C144 63.6421 140.642 67 136.5 67C132.358 67 129 63.6421 129 59.5V33H144V59.5Z"
